@@ -34,6 +34,11 @@ Extensions:
 - [Hobo HQ](http://hobocentral.net) - [:octocat:](https://github.com/Hobo), [:gem:](https://rubygems.org/gems/hobo),  [:book:](http://rubydoc.info/gems/hobo)
     - [News & Updates](http://hobocentral.net/blog)
 
+Future:
+
+- [Trailblazer](http://trailblazerb.org), [:github:](https://github.com/apotonick/trailblazer), [:gem:](https://rubygems.org/gems/trailblazer), [:book:](http://rubydoc.info/gems/trailblazer) - a thin layer on top of rails - (gently) enforces encapsulation, a "more" intuitive code structure and giving you a "better" object-oriented architecture by Nick Sutterer et al
+
+
 
 ## Sinatra
 
@@ -48,7 +53,11 @@ Extensions:
 
 Fun / Hack:
 
-- [Almost Sinatra :octocat:](https://github.com/rkh/almost-sinatra) - Sinatra refactored, only six lines of code
+- [Almost Sinatra :octocat:](https://github.com/rkh/almost-sinatra) - Sinatra refactored, only six lines of code by Konstantin Haase
+
+Future:
+
+- [Mustermann](http://rkh.github.io/mustermann), [:octocat:](https://github.com/rkh/mustermann)   - your personal string matching expert; can be used as a plugin for Sinatra 1.x and will power Sinatra 2.0; by Konstantin Haase et al
 
 
 ## Volt
@@ -61,6 +70,8 @@ _Client/Server Isomorphic Framework_
 ## Async Web (Socket) Frameworks
 
 - [Cramp :octocat:](https://github.com/lifo/cramp), [:gem:](https://rubygems.org/gems/cramp) - a fully asynchronous realtime web application framework built on top of EventMachine; providing full-duplex bi-directional communication by Pratik Naik
+
+- [Lattice :octocat:](https://github.com/celluloid/lattice), [:gem:](https://rubygems.org/gems/lattice), [:book:](http://rubydoc.info/gems/lattice) -  an actor-based web framework Ruby built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
 
 
 
