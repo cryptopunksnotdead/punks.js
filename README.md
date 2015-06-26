@@ -58,6 +58,9 @@ _Client/Server Isomorphic Framework_
 - [Volt HQ](http://voltframework.com) - [:octocat:](https://github.com/voltrb), [:gem:](https://rubygems.org/gems/volt)
     - [News & Updates](http://voltframework.com/blog)
 
+## Async Web (Socket) Frameworks
+
+
 ## Web Service Frameworks
 
 _JSON HTTP API Builder_
@@ -70,14 +73,32 @@ _JSON HTTP API Builder_
 ## Micro Framework Alternatives
 
 - [Rum :octocat:](https://github.com/chneukirchen/rum) - gRand Unified Mapper for rack apps
-- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba) - tiny but powerful mapper for rack apps
-- [New York, New York](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny)  -  a tiny (~300 lines of code) web framework on top of rack
-- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:gem:](https://rubygems.org/gems/roda)  - a routing tree web framework toolkit
+- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba), [:book:](http://rubydoc.info/gems/cuba) - tiny but powerful mapper for rack apps
+- [New York, New York (NYNY)](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny), [:book:](http://rubydoc.info/gems/nyny)  -  a tiny (~300 lines of code) web framework on top of rack
+- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:gem:](https://rubygems.org/gems/roda), [:book:](http://rubydoc.info/gems/roda)  - a routing tree web framework toolkit
+- [Hobbit :octocat:](https://github.com/patriciomacadden/hobbit), [:gem:](https://rubygems.org/gems/hobbit), [:book:](http://rubydoc.info/gems/hobbit) - a minimalistic microframework built on top of rack by Patricio Mac Adden
+- [Brooklyn :octocat:](https://github.com/luislavena/brooklyn) - a small web tool on top of rack by Luis Lavena
+- [Nancy](http://guilleiguaran.github.io/nancy), [:octocat:](https://github.com/guilleiguaran/nancy), [:gem:](https://rubygems.org/gems/nancy), [:book:](http://rubydoc.info/gems/nancy) - Sinatra's little daughter by Guillermo Iguaran
+- [Camping](http://camping.io), [:octocat:](https://github.com/camping), [:gem:](https://rubygems.org/gems/camping), [:book:](http://www.rubydoc.info/gems/camping) - minature rails for stay-at-home moms; the 4k pocket full-of-gags web microframework
+
+
+<!--
+   more
+   Kenji  - https://github.com/kballenegger/kenji    ??
+ -->
+
+
+
+
 
 ## Macro Framework Alternatives
 
-- [Lotus HQ](http://lotusrb.org) - [:octocat:](https://github.com/lotus), [:gem:](https://rubygems.org/gems/lotusrb)
+- [Lotus HQ](http://lotusrb.org) - [:octocat:](https://github.com/lotus), [:gem:](https://rubygems.org/gems/lotusrb), [:book:](http://rubydoc.info/gems/lotusrb)  - a complete web framework; bringing back object-oriented programming to web development, leveraging a stable API, minimal DSL and plain objects  by Luca Guidi et al
     - [News & Updates](http://lotusrb.org/blog)
+- [Ramaze HQ](http://ramaze.net) - [:octocat:](https://github.com/Ramaze), [:gem:](https://rubygems.org/gems/ramaze), [:book:](http://rubydoc.info/gems/ramaze) - a simple, light and modular open-source web application framework by Michael Fellinger et al
+    - [News & Updates](http://ramaze.net/blog)
+ 
+
 
 ## Meta
 
