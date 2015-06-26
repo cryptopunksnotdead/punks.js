@@ -46,6 +46,10 @@ Extensions:
 - [Padrino HQ](http://padrinorb.com) - [:octocat:](https://github.com/padrino), [:gem:](https://rubygems.org/gems/padrino)
     - [News & Updates](http://www.padrinorb.com/blog)
 
+Fun / Hack:
+
+- [Almost Sinatra :octocat:](https://github.com/rkh/almost-sinatra) - Sinatra refactored, only six lines of code
+
 
 ## Volt
 
@@ -58,16 +62,17 @@ _Client/Server Isomorphic Framework_
 
 _JSON HTTP API Builder_
 
-- [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape)
-- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks)
+- [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape)  - a micro-framework for creating REST-like APIs
+- [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe) - a thin API stack
+- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks) - serialize to hypermedia. HAL, JSON-API, etc.
 
 
 ## Micro Framework Alternatives
 
-- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba)
-- [New York, New York](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny)
-- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:roda:](https://rubygems.org/gems/roda)
-
+- [Rum :octocat:](https://github.com/chneukirchen/rum) - gRand Unified Mapper for rack apps
+- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba) - tiny but powerful mapper for rack apps
+- [New York, New York](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny)  -  a tiny (~300 lines of code) web framework on top of rack
+- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:gem:](https://rubygems.org/gems/roda)  - a routing tree web framework toolkit
 
 ## Macro Framework Alternatives
 
