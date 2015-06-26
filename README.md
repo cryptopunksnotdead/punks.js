@@ -54,10 +54,19 @@ _Client/Server Isomorphic Framework_
 - [Volt HQ](http://voltframework.com) - [:octocat:](https://github.com/voltrb), [:gem:](https://rubygems.org/gems/volt)
     - [News & Updates](http://voltframework.com/blog)
 
+## Web Service Frameworks
+
+_JSON HTTP API Builder_
+
+- [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape)
+- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks)
+
+
 ## Micro Framework Alternatives
 
+- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba)
 - [New York, New York](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny)
-
+- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:roda:](https://rubygems.org/gems/roda)
 
 
 ## Macro Framework Alternatives
