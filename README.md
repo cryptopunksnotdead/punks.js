@@ -3,7 +3,7 @@
 A collection of awesome Ruby web frameworks, libraries, tools, etc.
 
 
-Note: :gem: stands for the RubyGems page and :octocat: stands for the GitHub page.
+Note: :gem: stands for the RubyGems page, :octocat: stands for the GitHub page and :book: stands for the RubyDoc page.
 
 ---
 
