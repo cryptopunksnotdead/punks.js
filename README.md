@@ -60,13 +60,16 @@ _Client/Server Isomorphic Framework_
 
 ## Async Web (Socket) Frameworks
 
+- [Cramp :octocat:](https://github.com/lifo/cramp), [:gem:](https://rubygems.org/gems/cramp) - a fully asynchronous realtime web application framework built on top of EventMachine; providing full-duplex bi-directional communication by Pratik Naik
+
+
 
 ## Web Service Frameworks
 
 _JSON HTTP API Builder_
 
 - [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape), [:book:](http://rubydoc.info/gems/grape)  - a micro-framework for creating REST-like APIs
-- [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe),  [:book:](http://rubydoc.info/gems/crepe) - a thin API stack
+- [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe) - a thin API stack
 - [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks), [:book:](http://rubydoc.info/gems/yaks) - serialize to hypermedia. HAL, JSON-API, etc.
 
 
@@ -80,6 +83,7 @@ _JSON HTTP API Builder_
 - [Brooklyn :octocat:](https://github.com/luislavena/brooklyn) - a small web tool on top of rack by Luis Lavena
 - [Nancy](http://guilleiguaran.github.io/nancy), [:octocat:](https://github.com/guilleiguaran/nancy), [:gem:](https://rubygems.org/gems/nancy), [:book:](http://rubydoc.info/gems/nancy) - Sinatra's little daughter by Guillermo Iguaran
 - [Camping](http://camping.io), [:octocat:](https://github.com/camping), [:gem:](https://rubygems.org/gems/camping), [:book:](http://www.rubydoc.info/gems/camping) - minature rails for stay-at-home moms; the 4k pocket full-of-gags web microframework
+- [Scorched](http://scorchedrb.com), [:octocat:](https://github.com/Wardrop/Scorched), [:gem:](https://rubygems.org/gems/scorched), [:book:](http://rubydoc.info/gems/scorched)  -  light-weight, DRY as a desert, web framework by Tom Wardrop et al
 
 
 <!--
@@ -95,6 +99,11 @@ _JSON HTTP API Builder_
 
 - [Lotus HQ](http://lotusrb.org) - [:octocat:](https://github.com/lotus), [:gem:](https://rubygems.org/gems/lotusrb), [:book:](http://rubydoc.info/gems/lotusrb)  - a complete web framework; bringing back object-oriented programming to web development, leveraging a stable API, minimal DSL and plain objects  by Luca Guidi et al
     - [News & Updates](http://lotusrb.org/blog)
+
+<!-- new list -->
+
+- [Pakyow HQ](http://pakyow.org) - [:octocat:](https://github.com/pakyow), [:gem:](https://rubygems.org/gems/pakyow) - an open-source framework for the modern web with a view-first development process that's friendly to everyone whether you're a designer or a developer
+    - [News & Updates](http://pakyow.org/blog)
 
 <!-- new list -->
 
