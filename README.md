@@ -29,10 +29,23 @@ _Batteries Included Macro Framework_
 - [Ruby on Rails HQ](http://rubyonrails.org) - [:octocat:](https://github.com/rails), [:gem:](https://rubygems.org/gems/rails)
     - [News & Updates](http://weblog.rubyonrails.org)
 
+Extensions:
+
+- [Hobo HQ](http://hobocentral.net) - [:ocotocat:](https://github.com/Hobo), [:gem:](https://rubygems.org/gems/hobo)
+    - [News & Updates](http://hobocentral.net/blog)
+
 
 ## Sinatra
 
 _Micro Framework_
+
+- [Sinatra HQ](http://sinatrarb.com) - [:octocat:](https://github.com/sinatra), [:gem:](https://rubygems.org/gems/sinatra)
+
+Extensions:
+
+- [Padrino HQ](http://padrinorb.com) - [:octocat:](https://github.com/padrino), [:gem:](https://rubygems.org/gems/padrino)
+    - [News & Updates](http://www.padrinorb.com/blog)
+
 
 ## Volt
 
