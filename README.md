@@ -16,7 +16,7 @@ Contributions welcome. Anything missing? Send in a pull request. Thanks.
 
 ## Rack
 
-- [Rack HQ](http://rack.github.io) - [:octocat:](https://github.com/rack), [:gem:](https://rubygems.org/gems/rack)
+- [Rack HQ](http://rack.github.io) - [:octocat:](https://github.com/rack), [:gem:](https://rubygems.org/gems/rack),  [:book:](http://rubydoc.info/gems/rack)
 
 ## Rack Alternatives
 
@@ -26,12 +26,12 @@ Contributions welcome. Anything missing? Send in a pull request. Thanks.
 
 _Batteries Included Macro Framework_
 
-- [Ruby on Rails HQ](http://rubyonrails.org) - [:octocat:](https://github.com/rails), [:gem:](https://rubygems.org/gems/rails)
+- [Ruby on Rails HQ](http://rubyonrails.org) - [:octocat:](https://github.com/rails), [:gem:](https://rubygems.org/gems/rails), [:book:](http://rubydoc.info/gems/rails)
     - [News & Updates](http://weblog.rubyonrails.org)
 
 Extensions:
 
-- [Hobo HQ](http://hobocentral.net) - [:octocat:](https://github.com/Hobo), [:gem:](https://rubygems.org/gems/hobo)
+- [Hobo HQ](http://hobocentral.net) - [:octocat:](https://github.com/Hobo), [:gem:](https://rubygems.org/gems/hobo),  [:book:](http://rubydoc.info/gems/hobo)
     - [News & Updates](http://hobocentral.net/blog)
 
 
@@ -39,11 +39,11 @@ Extensions:
 
 _Micro Framework_
 
-- [Sinatra HQ](http://sinatrarb.com) - [:octocat:](https://github.com/sinatra), [:gem:](https://rubygems.org/gems/sinatra)
+- [Sinatra HQ](http://sinatrarb.com) - [:octocat:](https://github.com/sinatra), [:gem:](https://rubygems.org/gems/sinatra), [:book:](http://rubydoc.info/gems/sinatra)
 
 Extensions:
 
-- [Padrino HQ](http://padrinorb.com) - [:octocat:](https://github.com/padrino), [:gem:](https://rubygems.org/gems/padrino)
+- [Padrino HQ](http://padrinorb.com) - [:octocat:](https://github.com/padrino), [:gem:](https://rubygems.org/gems/padrino), [:book:](http://rubydoc.info/gems/padrino)
     - [News & Updates](http://www.padrinorb.com/blog)
 
 Fun / Hack:
@@ -55,7 +55,7 @@ Fun / Hack:
 
 _Client/Server Isomorphic Framework_
 
-- [Volt HQ](http://voltframework.com) - [:octocat:](https://github.com/voltrb), [:gem:](https://rubygems.org/gems/volt)
+- [Volt HQ](http://voltframework.com) - [:octocat:](https://github.com/voltrb), [:gem:](https://rubygems.org/gems/volt),  [:book:](http://rubydoc.info/gems/volt)
     - [News & Updates](http://voltframework.com/blog)
 
 ## Async Web (Socket) Frameworks
@@ -65,9 +65,9 @@ _Client/Server Isomorphic Framework_
 
 _JSON HTTP API Builder_
 
-- [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape)  - a micro-framework for creating REST-like APIs
-- [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe) - a thin API stack
-- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks) - serialize to hypermedia. HAL, JSON-API, etc.
+- [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape), [:book:](http://rubydoc.info/gems/grape)  - a micro-framework for creating REST-like APIs
+- [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe),  [:book:](http://rubydoc.info/gems/crepe) - a thin API stack
+- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks), [:book:](http://rubydoc.info/gems/yaks) - serialize to hypermedia. HAL, JSON-API, etc.
 
 
 ## Micro Framework Alternatives
@@ -95,6 +95,9 @@ _JSON HTTP API Builder_
 
 - [Lotus HQ](http://lotusrb.org) - [:octocat:](https://github.com/lotus), [:gem:](https://rubygems.org/gems/lotusrb), [:book:](http://rubydoc.info/gems/lotusrb)  - a complete web framework; bringing back object-oriented programming to web development, leveraging a stable API, minimal DSL and plain objects  by Luca Guidi et al
     - [News & Updates](http://lotusrb.org/blog)
+
+<!-- new list -->
+
 - [Ramaze HQ](http://ramaze.net) - [:octocat:](https://github.com/Ramaze), [:gem:](https://rubygems.org/gems/ramaze), [:book:](http://rubydoc.info/gems/ramaze) - a simple, light and modular open-source web application framework by Michael Fellinger et al
     - [News & Updates](http://ramaze.net/blog)
  
