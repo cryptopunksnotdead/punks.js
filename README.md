@@ -16,12 +16,19 @@ Contributions welcome. Anything missing? Send in a pull request. Thanks.
 
 ## Rack
 
+- [Rack HQ](http://rack.github.io) - [:octocat:](https://github.com/rack), [:gem:](https://rubygems.org/gems/rack)
+
 ## Rack Alternatives
 
+- [the_metal :octocat:](https://github.com/tenderlove/the_metal) - a spike for thoughts about Rack 2.0
 
 ## Ruby on Rails
 
 _Batteries Included Macro Framework_
+
+- [Ruby on Rails HQ](http://rubyonrails.org) - [:octocat:](https://github.com/rails), [:gem:](https://rubygems.org/gems/rails)
+    - [News & Updates](http://weblog.rubyonrails.org)
+
 
 ## Sinatra
 
