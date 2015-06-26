@@ -31,7 +31,7 @@ _Batteries Included Macro Framework_
 
 Extensions:
 
-- [Hobo HQ](http://hobocentral.net) - [:ocotocat:](https://github.com/Hobo), [:gem:](https://rubygems.org/gems/hobo)
+- [Hobo HQ](http://hobocentral.net) - [:octocat:](https://github.com/Hobo), [:gem:](https://rubygems.org/gems/hobo)
     - [News & Updates](http://hobocentral.net/blog)
 
 
@@ -51,13 +51,19 @@ Extensions:
 
 _Client/Server Isomorphic Framework_
 
+- [Volt HQ](http://voltframework.com) - [:octocat:](https://github.com/voltrb), [:gem:](https://rubygems.org/gems/volt)
+    - [News & Updates](http://voltframework.com/blog)
 
 ## Micro Framework Alternatives
+
+- [New York, New York](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny)
+
 
 
 ## Macro Framework Alternatives
 
-
+- [Lotus HQ](http://lotusrb.org) - [:octocat:](https://github.com/lotus), [:gem:](https://rubygems.org/gems/lotusrb)
+    - [News & Updates](http://lotusrb.org/blog)
 
 ## Meta
 
