@@ -1,4 +1,4 @@
-Awesome Series @ Planet Ruby
+**Awesome Series @ Planet Ruby**
 
 [Rubies (Virtual Machines, Compilers, ...)](https://github.com/planetruby/awesome-rubies) • 
 [ActiveRecord](https://github.com/planetruby/awesome-activerecord)  •
@@ -6,7 +6,7 @@ Awesome Series @ Planet Ruby
 [Events (Conferences, Camps, Meetups, ...)](https://github.com/planetruby/awesome-events) •
 [Blogs (News, Opinions, Podcasts, ...)](https://github.com/planetruby/awesome-blogs)
 
-# awesome-webframeworks
+# Webframeworks
 
 A collection of awesome Ruby web frameworks, libraries, tools, etc.
 
