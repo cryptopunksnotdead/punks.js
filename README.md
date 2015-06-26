@@ -1,4 +1,5 @@
-Awesome Series @ Planet Ruby -
+Awesome Series @ Planet Ruby
+
 [Rubies (Virtual Machines, Compilers, ...)](https://github.com/planetruby/awesome-rubies) • 
 [ActiveRecord](https://github.com/planetruby/awesome-activerecord)  •
 [Webframeworks (Micro, Macro, APIs, ...)](https://github.com/planetruby/awesome-webframeworks) •
