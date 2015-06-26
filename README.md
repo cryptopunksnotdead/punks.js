@@ -36,7 +36,7 @@ Extensions:
 
 Future:
 
-- [Trailblazer](http://trailblazerb.org), [:github:](https://github.com/apotonick/trailblazer), [:gem:](https://rubygems.org/gems/trailblazer), [:book:](http://rubydoc.info/gems/trailblazer) - a thin layer on top of rails - (gently) enforces encapsulation, a "more" intuitive code structure and giving you a "better" object-oriented architecture by Nick Sutterer et al
+- [Trailblazer](http://trailblazerb.org), [:octocat:](https://github.com/apotonick/trailblazer), [:gem:](https://rubygems.org/gems/trailblazer), [:book:](http://rubydoc.info/gems/trailblazer) - a thin layer on top of rails - (gently) enforces encapsulation, a "more" intuitive code structure and giving you a "better" object-oriented architecture by Nick Sutterer et al
 
 
 
@@ -69,9 +69,9 @@ _Client/Server Isomorphic Framework_
 
 ## Async Web (Socket) Frameworks
 
-- [Cramp :octocat:](https://github.com/lifo/cramp), [:gem:](https://rubygems.org/gems/cramp) - a fully asynchronous realtime web application framework built on top of EventMachine; providing full-duplex bi-directional communication by Pratik Naik
+- [Cramp :octocat:](https://github.com/lifo/cramp), [:gem:](https://rubygems.org/gems/cramp) - a fully asynchronous realtime web application framework built on top of event machine; providing full-duplex bi-directional communication by Pratik Naik
 
-- [Lattice :octocat:](https://github.com/celluloid/lattice), [:gem:](https://rubygems.org/gems/lattice), [:book:](http://rubydoc.info/gems/lattice) -  an actor-based web framework Ruby built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
+- [Lattice :octocat:](https://github.com/celluloid/lattice), [:gem:](https://rubygems.org/gems/lattice), [:book:](http://rubydoc.info/gems/lattice) -  an actor-based web framework built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
 
 
 
