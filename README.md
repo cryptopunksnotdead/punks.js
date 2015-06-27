@@ -31,7 +31,7 @@ Contributions welcome. Anything missing? Send in a pull request. Thanks.
 [Async Web (Socket) Frameworks](#async-web-socket-frameworks) •
 [Web Service Frameworks](#web-service-frameworks) •
 [Micro Framework Alternatives](#micro-framework-alternatives) •
-[Macro Framework Alternatives](#macro-framework-alternatives) •
+["Full Stack" Macro Framework Alternatives](#full-stack-macro-framework-alternatives) •
 [Meta](#meta)
 
 
@@ -45,7 +45,7 @@ Contributions welcome. Anything missing? Send in a pull request. Thanks.
 
 ## Ruby on Rails
 
-_Batteries Included "Full-Stack" Macro Framework_
+_Batteries Included "Full Stack" Macro Framework_
 
 - [Ruby on Rails HQ](http://rubyonrails.org) - [:octocat:](https://github.com/rails), [:gem:](https://rubygems.org/gems/rails), [:book:](http://rubydoc.info/gems/rails)
     - [News & Updates](http://weblog.rubyonrails.org)
