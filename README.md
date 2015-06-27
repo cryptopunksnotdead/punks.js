@@ -45,7 +45,7 @@ Contributions welcome. Anything missing? Send in a pull request. Thanks.
 
 ## Ruby on Rails
 
-_Batteries Included Macro Framework_
+_Batteries Included "Full-Stack" Macro Framework_
 
 - [Ruby on Rails HQ](http://rubyonrails.org) - [:octocat:](https://github.com/rails), [:gem:](https://rubygems.org/gems/rails), [:book:](http://rubydoc.info/gems/rails)
     - [News & Updates](http://weblog.rubyonrails.org)
@@ -125,9 +125,7 @@ _JSON HTTP API Builder_
 
 
 
-
-
-## Macro Framework Alternatives
+## "Full Stack" Macro Framework Alternatives
 
 - [Lotus HQ](http://lotusrb.org) - [:octocat:](https://github.com/lotus), [:gem:](https://rubygems.org/gems/lotusrb), [:book:](http://rubydoc.info/gems/lotusrb)  - a complete web framework; bringing back object-oriented programming to web development, leveraging a stable API, minimal DSL and plain objects  by Luca Guidi et al
     - [News & Updates](http://lotusrb.org/blog)
