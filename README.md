@@ -102,15 +102,15 @@ _JSON HTTP API Builder_
 
 - [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape), [:book:](http://rubydoc.info/gems/grape)  - a micro-framework for creating REST-like APIs
 - [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe) - a thin API stack
-- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks), [:book:](http://rubydoc.info/gems/yaks) - serialize to hypermedia. HAL, JSON-API, etc.
-- [Praxis](http://praxis-framework.io) - [:octocat:](https://github.com/rightscale/praxis), [:gem:](https://rubygems.org/gems/praxis), [:book:](http://eng.rightscale.com/2014/08/22/unveiling_praxis.html)  - A micro framework that focuses on both the design and implementation aspects of creating good APIs quick.
+- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks), [:book:](http://rubydoc.info/gems/yaks) - serialize to hypermedia. HAL, JSON API, HALO, collection+JSON etc. by Arne Brasseur et al
+- [Praxis](http://praxis-framework.io) - [:octocat:](https://github.com/rightscale/praxis), [:gem:](https://rubygems.org/gems/praxis), [:book:](http://rubydoc.info/gems/praxis)  - a micro framework focusing on the design and coding aspects of creating good APIs quick by Josep M. Blanquer et al
 
 ## Micro Framework Alternatives
 
-- [Rum :octocat:](https://github.com/chneukirchen/rum) - gRand Unified Mapper for rack apps
-- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba), [:book:](http://rubydoc.info/gems/cuba) - tiny but powerful mapper for rack apps
-- [New York, New York (NYNY)](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny), [:book:](http://rubydoc.info/gems/nyny)  -  a tiny (~300 lines of code) web framework on top of rack
-- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:gem:](https://rubygems.org/gems/roda), [:book:](http://rubydoc.info/gems/roda)  - a routing tree web framework toolkit
+- [Rum :octocat:](https://github.com/chneukirchen/rum) - gRand Unified Mapper for rack apps by Christian Neukirchen
+- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba), [:book:](http://rubydoc.info/gems/cuba) - tiny but powerful mapper for rack apps by Michel Martens
+- [New York, New York (NYNY)](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny), [:book:](http://rubydoc.info/gems/nyny)  -  a tiny (~300 lines of code) web framework on top of rack by Andrei Lisnic
+- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:gem:](https://rubygems.org/gems/roda), [:book:](http://rubydoc.info/gems/roda)  - a routing tree web framework toolkit by Jeremy Evans
 - [Hobbit :octocat:](https://github.com/patriciomacadden/hobbit), [:gem:](https://rubygems.org/gems/hobbit), [:book:](http://rubydoc.info/gems/hobbit) - a minimalistic microframework built on top of rack by Patricio Mac Adden
 - [Brooklyn :octocat:](https://github.com/luislavena/brooklyn) - a small web tool on top of rack by Luis Lavena
 - [Nancy](http://guilleiguaran.github.io/nancy), [:octocat:](https://github.com/guilleiguaran/nancy), [:gem:](https://rubygems.org/gems/nancy), [:book:](http://rubydoc.info/gems/nancy) - Sinatra's little daughter by Guillermo Iguaran
