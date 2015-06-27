@@ -103,7 +103,7 @@ _JSON HTTP API Builder_
 - [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape), [:book:](http://rubydoc.info/gems/grape)  - a micro-framework for creating REST-like APIs
 - [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe) - a thin API stack
 - [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks), [:book:](http://rubydoc.info/gems/yaks) - serialize to hypermedia. HAL, JSON-API, etc.
-
+- [Praxis](http://praxis-framework.io) - [:octocat:](https://github.com/rightscale/praxis), [:gem:](https://rubygems.org/gems/praxis), [:book:](http://eng.rightscale.com/2014/08/22/unveiling_praxis.html)  - A micro framework that focuses on both the design and implementation aspects of creating good APIs quick.
 
 ## Micro Framework Alternatives
 
