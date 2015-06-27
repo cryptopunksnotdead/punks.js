@@ -141,7 +141,9 @@ _JSON HTTP API Builder_
 - [Ramaze HQ](http://ramaze.net) - [:octocat:](https://github.com/Ramaze), [:gem:](https://rubygems.org/gems/ramaze), [:book:](http://rubydoc.info/gems/ramaze) - a simple, light and modular open-source web application framework by Michael Fellinger et al
     - [News & Updates](http://ramaze.net/blog)
  
+## Thanks
 
+Josep M. Blanquer
 
 ## Meta
 
