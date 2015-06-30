@@ -79,7 +79,7 @@ Fun / Hack:
 
 Future:
 
-- [Mustermann](http://rkh.github.io/mustermann), [:octocat:](https://github.com/rkh/mustermann)   - your personal string matching expert; can be used as a plugin for Sinatra 1.x and will power Sinatra 2.0; by Konstantin Haase et al
+- [Mustermann](http://rkh.github.io/mustermann), [:octocat:](https://github.com/rkh/mustermann), [:gem:](https://rubygems.org/gems/mustermann)   - your personal string matching expert; can be used as a plugin for Sinatra 1.x and will power Sinatra 2.0; by Konstantin Haase et al
 
 
 ## Volt
