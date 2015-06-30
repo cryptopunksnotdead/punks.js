@@ -95,6 +95,8 @@ _Client/Server Isomorphic Framework_
 
 - [Lattice :octocat:](https://github.com/celluloid/lattice), [:gem:](https://rubygems.org/gems/lattice), [:book:](http://rubydoc.info/gems/lattice) -  an actor-based web framework built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
 
+- [Angelo :octocat:](https://github.com/kenichi/angelo), [:gem:](https://rubygems.org/gems/angelo) - sinatra-like mini-language for reel (built upon Celluloid::IO, no rack);  supports web sockets and server sent events (SSE) by Kenichi Nakamura
+   
 
 
 ## Web Service Frameworks
