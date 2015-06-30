@@ -145,7 +145,7 @@ _JSON HTTP API Builder_
  
 ## Thanks
 
-Josep M. Blanquer
+Tony Arcieri • Josep M. Blanquer
 
 ## Meta
 
