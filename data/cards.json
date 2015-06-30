@@ -1,0 +1,170 @@
+[
+  {
+    "name": "rack",
+    "gem_url": "https://rubygems.org/gems/rack",
+    "github_url": "https://github.com/rack/rack",
+    "categories": "Webframeworks › Rack"
+  },
+  {
+    "name": "the_metal",
+    "gem_url": null,
+    "github_url": "https://github.com/tenderlove/the_metal",
+    "categories": "Webframeworks › Rack Alternatives"
+  },
+  {
+    "name": "rails",
+    "gem_url": "https://rubygems.org/gems/rails",
+    "github_url": "https://github.com/rails/rails",
+    "categories": "Webframeworks › Ruby on Rails"
+  },
+  {
+    "name": "hobo",
+    "gem_url": "https://rubygems.org/gems/hobo",
+    "github_url": "https://github.com/Hobo/hobo",
+    "categories": "Webframeworks › Ruby on Rails"
+  },
+  {
+    "name": "trailblazer",
+    "gem_url": "https://rubygems.org/gems/trailblazer",
+    "github_url": "https://github.com/apotonick/trailblazer",
+    "categories": "Webframeworks › Ruby on Rails"
+  },
+  {
+    "name": "sinatra",
+    "gem_url": "https://rubygems.org/gems/sinatra",
+    "github_url": "https://github.com/sinatra/sinatra",
+    "categories": "Webframeworks › Sinatra"
+  },
+  {
+    "name": "padrino",
+    "gem_url": "https://rubygems.org/gems/padrino",
+    "github_url": "https://github.com/padrino/padrino",
+    "categories": "Webframeworks › Sinatra"
+  },
+  {
+    "name": "almost-sinatra",
+    "gem_url": null,
+    "github_url": "https://github.com/rkh/almost-sinatra",
+    "categories": "Webframeworks › Sinatra"
+  },
+  {
+    "name": "mustermann",
+    "gem_url": null,
+    "github_url": "https://github.com/rkh/mustermann",
+    "categories": "Webframeworks › Sinatra"
+  },
+  {
+    "name": "voltrb",
+    "gem_url": "https://rubygems.org/gems/volt",
+    "github_url": "https://github.com/voltrb/voltrb",
+    "categories": "Webframeworks › Volt"
+  },
+  {
+    "name": "cramp",
+    "gem_url": "https://rubygems.org/gems/cramp",
+    "github_url": "https://github.com/lifo/cramp",
+    "categories": "Webframeworks › Async Web (Socket) Frameworks"
+  },
+  {
+    "name": "lattice",
+    "gem_url": "https://rubygems.org/gems/lattice",
+    "github_url": "https://github.com/celluloid/lattice",
+    "categories": "Webframeworks › Async Web (Socket) Frameworks"
+  },
+  {
+    "name": "grape",
+    "gem_url": "https://rubygems.org/gems/grape",
+    "github_url": "https://github.com/intridea/grape",
+    "categories": "Webframeworks › Web Service Frameworks"
+  },
+  {
+    "name": "crepe",
+    "gem_url": "https://rubygems.org/gems/crepe",
+    "github_url": "https://github.com/crepe/crepe",
+    "categories": "Webframeworks › Web Service Frameworks"
+  },
+  {
+    "name": "yaks",
+    "gem_url": "https://rubygems.org/gems/yaks",
+    "github_url": "https://github.com/plexus/yaks",
+    "categories": "Webframeworks › Web Service Frameworks"
+  },
+  {
+    "name": "praxis",
+    "gem_url": "https://rubygems.org/gems/praxis",
+    "github_url": "https://github.com/rightscale/praxis",
+    "categories": "Webframeworks › Web Service Frameworks"
+  },
+  {
+    "name": "rum",
+    "gem_url": null,
+    "github_url": "https://github.com/chneukirchen/rum",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "cuba",
+    "gem_url": "https://rubygems.org/gems/cuba",
+    "github_url": "https://github.com/soveran/cuba",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "nyny",
+    "gem_url": "https://rubygems.org/gems/nyny",
+    "github_url": "https://github.com/alisnic/nyny",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "roda",
+    "gem_url": "https://rubygems.org/gems/roda",
+    "github_url": "https://github.com/jeremyevans/roda",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "hobbit",
+    "gem_url": "https://rubygems.org/gems/hobbit",
+    "github_url": "https://github.com/patriciomacadden/hobbit",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "brooklyn",
+    "gem_url": null,
+    "github_url": "https://github.com/luislavena/brooklyn",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "nancy",
+    "gem_url": "https://rubygems.org/gems/nancy",
+    "github_url": "https://github.com/guilleiguaran/nancy",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "camping",
+    "gem_url": "https://rubygems.org/gems/camping",
+    "github_url": "https://github.com/camping/camping",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "Scorched",
+    "gem_url": "https://rubygems.org/gems/scorched",
+    "github_url": "https://github.com/Wardrop/Scorched",
+    "categories": "Webframeworks › Micro Framework Alternatives"
+  },
+  {
+    "name": "lotus",
+    "gem_url": "https://rubygems.org/gems/lotusrb",
+    "github_url": "https://github.com/lotus/lotus",
+    "categories": "Webframeworks › \"Full Stack\" Macro Framework Alternatives"
+  },
+  {
+    "name": "pakyow",
+    "gem_url": "https://rubygems.org/gems/pakyow",
+    "github_url": "https://github.com/pakyow/pakyow",
+    "categories": "Webframeworks › \"Full Stack\" Macro Framework Alternatives"
+  },
+  {
+    "name": "ramaze",
+    "gem_url": "https://rubygems.org/gems/ramaze",
+    "github_url": "https://github.com/Ramaze/ramaze",
+    "categories": "Webframeworks › \"Full Stack\" Macro Framework Alternatives"
+  }
+]
