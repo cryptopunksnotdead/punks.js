@@ -12,16 +12,13 @@ Awesome Series @ Planet Ruby
 
 A collection of awesome Ruby web frameworks, libraries, tools, etc.
 
-
-Note: :gem: stands for the RubyGems page, :octocat: stands for the GitHub page and :book: stands for the RubyDoc page.
-
 ---
 
 [ANNOUNCEMENT] Looking for awesome Ruby Gems? See the [Ruby Gems of the Week Series @ Planet Ruby](http://planetruby.github.io/gems).
 
 ---
 
-Contributions welcome. Anything missing? Send in a pull request. Thanks.
+#### _Contributions welcome. Anything missing? Send in a pull request. Thanks._
 
 
 [Rack](#rack) •
@@ -34,6 +31,8 @@ Contributions welcome. Anything missing? Send in a pull request. Thanks.
 [Micro Framework Alternatives](#micro-framework-alternatives) •
 ["Full Stack" Macro Framework Alternatives](#full-stack-macro-framework-alternatives) •
 [Meta](#meta)
+
+Note: :gem: stands for the RubyGems page, :octocat: stands for the GitHub page and :book: stands for the RubyDoc page.
 
 
 ## Rack
