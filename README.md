@@ -3,6 +3,7 @@ Awesome Series @ Planet Ruby
 [Rubies (Virtual Machines, Compilers, ...)](https://github.com/planetruby/awesome-rubies) • 
 [ActiveRecord](https://github.com/planetruby/awesome-activerecord)  •
 [Webframeworks (Micro, Macro, APIs, ...)](https://github.com/planetruby/awesome-webframeworks) •
+[Webservers (Single-Threaded, Multi-Threaded, Multi-Plexed, ...)](https://github.com/planetruby/awesome-webservers) • 
 [Static Generators (Sites, Books, Presentations, ...)](https://github.com/planetruby/awesome-staticgen) •
 [Events (Conferences, Camps, Meetups, ...)](https://github.com/planetruby/awesome-events) •
 [Blogs (News, Opinions, Podcasts, ...)](https://github.com/planetruby/awesome-blogs)
@@ -30,6 +31,7 @@ A collection of awesome Ruby web frameworks, libraries, tools, etc.
 [Web Service Frameworks](#web-service-frameworks) •
 [Micro Framework Alternatives](#micro-framework-alternatives) •
 ["Full Stack" Macro Framework Alternatives](#full-stack-macro-framework-alternatives) •
+[More / Misc Frameworks](#more--misc-frameworks) •
 [Meta](#meta)
 
 Note: :gem: stands for the RubyGems page, :octocat: stands for the GitHub page and :book: stands for the RubyDoc page.
@@ -141,6 +143,12 @@ _JSON HTTP API Builder_
 
 - [Ramaze HQ](http://ramaze.net) - [:octocat:](https://github.com/Ramaze), [:gem:](https://rubygems.org/gems/ramaze), [:book:](http://rubydoc.info/gems/ramaze) - a simple, light and modular open-source web application framework by Michael Fellinger et al
     - [News & Updates](http://ramaze.net/blog)
+
+## More / Misc Frameworks
+
+- [Webmachine HQ :octocat:](https://github.com/Webmachine/webmachine-ruby), [:gem:](https://rubygems.org/gems/webmachine) - the HTTP toolkit (a port of the Webmachine in Erlang) for building apps in a declarative way e.g. less concerned with the procedures involved in handling requests directly and more with describing facts about the resources that make up your app; by Sean Cribbs et al
+
+
  
 ## Thanks
 
