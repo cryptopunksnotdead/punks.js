@@ -146,7 +146,7 @@ _JSON HTTP API Builder_
 
 ## More / Misc Frameworks
 
-- [Webmachine HQ :octocat:](https://github.com/Webmachine/webmachine-ruby), [:gem:](https://rubygems.org/gems/webmachine) - the HTTP toolkit (a port of the Webmachine in Erlang) for building apps in a declarative way e.g. less concerned with the procedures involved in handling requests directly and more with describing facts about the resources that make up your app; by Sean Cribbs et al
+- [Webmachine HQ :octocat:](https://github.com/Webmachine/webmachine-ruby), [:gem:](https://rubygems.org/gems/webmachine) - a HTTP toolkit - a port of the Webmachine in Erlang - for building apps in a declarative way e.g. less concerned with the procedures involved in handling requests directly and more with describing facts about the resources that make up your app; by Sean Cribbs et al
 
 
  
