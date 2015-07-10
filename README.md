@@ -22,8 +22,7 @@ A collection of awesome Ruby web frameworks, libraries, tools, etc.
 #### _Contributions welcome. Anything missing? Send in a pull request. Thanks._
 
 
-[Rack](#rack) •
-[Rack Alternatives](#rack-alternatives) • 
+[Rack & Alternatives](#rack-alternatives) •
 [Ruby on Rails](#ruby-on-rails) • 
 [Sinatra](#sinatra) •
 [Volt](#volt) •
@@ -34,32 +33,30 @@ A collection of awesome Ruby web frameworks, libraries, tools, etc.
 [More / Misc Frameworks](#more--misc-frameworks) •
 [Meta](#meta)
 
+<!--
 Note: :gem: stands for the RubyGems page, :octocat: stands for the GitHub page and :book: stands for the RubyDoc page.
+-->
 
+## Rack & Alternatives
 
-## Rack
+See the [Awesome Rack List »](https://github.com/planetruby/awesome-rack).
 
-- [Rack HQ](http://rack.github.io) - [:octocat:](https://github.com/rack), [:gem:](https://rubygems.org/gems/rack),  [:book:](http://rubydoc.info/gems/rack)
-
-## Rack Alternatives
-
-- [the_metal :octocat:](https://github.com/tenderlove/the_metal) - a spike for thoughts about Rack 2.0
 
 ## Ruby on Rails
 
 _Batteries Included "Full Stack" Macro Framework_
 
-- [Ruby on Rails HQ](http://rubyonrails.org) - [:octocat:](https://github.com/rails), [:gem:](https://rubygems.org/gems/rails), [:book:](http://rubydoc.info/gems/rails)
+- **Ruby on Rails** (web: [rubyonrails.org](http://rubyonrails.org), github: [rails/rails](https://github.com/rails/rails), gem: [rails](https://rubygems.org/gems/rails))
     - [News & Updates](http://weblog.rubyonrails.org)
 
-Extensions:
+Extensions
 
-- [Hobo HQ](http://hobocentral.net) - [:octocat:](https://github.com/Hobo), [:gem:](https://rubygems.org/gems/hobo),  [:book:](http://rubydoc.info/gems/hobo)
+- **Hobo** (web: [hobocentral.net](http://hobocentral.net), github: [Hobo/hobo](https://github.com/Hobo/hobo), gem: [hobo](https://rubygems.org/gems/hobo))
     - [News & Updates](http://hobocentral.net/blog)
 
-Future:
+Future
 
-- [Trailblazer](http://trailblazerb.org), [:octocat:](https://github.com/apotonick/trailblazer), [:gem:](https://rubygems.org/gems/trailblazer), [:book:](http://rubydoc.info/gems/trailblazer) - a thin layer on top of rails - (gently) enforces encapsulation, a "more" intuitive code structure and giving you a "better" object-oriented architecture by Nick Sutterer et al
+- **Trailblazer** (web: [trailblazerb.org](http://trailblazerb.org), github: [apotonick/trailblazer](https://github.com/apotonick/trailblazer), gem: [trailblazer](https://rubygems.org/gems/trailblazer)) - a thin layer on top of rails - (gently) enforces encapsulation, a "more" intuitive code structure and giving you a "better" object-oriented architecture by Nick Sutterer et al
 
 
 
