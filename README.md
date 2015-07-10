@@ -22,7 +22,7 @@ A collection of awesome Ruby web frameworks, libraries, tools, etc.
 #### _Contributions welcome. Anything missing? Send in a pull request. Thanks._
 
 
-[Rack & Alternatives](#rack-alternatives) •
+[Rack 'n' Alternatives](#rack-n-alternatives) •
 [Ruby on Rails](#ruby-on-rails) • 
 [Sinatra](#sinatra) •
 [Volt](#volt) •
@@ -37,7 +37,9 @@ A collection of awesome Ruby web frameworks, libraries, tools, etc.
 Note: :gem: stands for the RubyGems page, :octocat: stands for the GitHub page and :book: stands for the RubyDoc page.
 -->
 
-## Rack & Alternatives
+## Rack 'n' Alternatives
+
+_A Ruby webserver interface lets you mix-n-match web servers and web frameworks; stack web apps inside web apps inside web apps_
 
 See the [Awesome Rack List »](https://github.com/planetruby/awesome-rack).
 
@@ -62,22 +64,22 @@ Future
 
 ## Sinatra
 
-_Micro Framework_
+_Micro Framework - Less than two thousand lines of code (<2000 LOC)_
 
-- [Sinatra HQ](http://sinatrarb.com) - [:octocat:](https://github.com/sinatra), [:gem:](https://rubygems.org/gems/sinatra), [:book:](http://rubydoc.info/gems/sinatra)
+- **Sinatra** (web: [sinatrarb.com](http://sinatrarb.com), github: [sinatra/sinatra](https://github.com/sinatra), gem: [sinatra](https://rubygems.org/gems/sinatra))
 
-Extensions:
+Extensions
 
-- [Padrino HQ](http://padrinorb.com) - [:octocat:](https://github.com/padrino), [:gem:](https://rubygems.org/gems/padrino), [:book:](http://rubydoc.info/gems/padrino)
+- **Padrino** (web: [padrinorb.com](http://padrinorb.com), github: [padrino/padrino](https://github.com/padrino), gem:  [padriono](https://rubygems.org/gems/padrino))
     - [News & Updates](http://www.padrinorb.com/blog)
 
-Fun / Hack:
+Fun / Hack
 
-- [Almost Sinatra :octocat:](https://github.com/rkh/almost-sinatra) - Sinatra refactored, only six lines of code by Konstantin Haase
+- **Almost Sinatra** (github: [rkh/almost-sinatra](https://github.com/rkh/almost-sinatra)) - Sinatra refactored, only six lines of code by Konstantin Haase
 
-Future:
+Future
 
-- [Mustermann](http://rkh.github.io/mustermann), [:octocat:](https://github.com/rkh/mustermann), [:gem:](https://rubygems.org/gems/mustermann)   - your personal string matching expert; can be used as a plugin for Sinatra 1.x and will power Sinatra 2.0; by Konstantin Haase et al
+- **Mustermann** (web: [rkh.github.io/mustermann](http://rkh.github.io/mustermann), github: [rkh/mustermann](https://github.com/rkh/mustermann), [mustermann](https://rubygems.org/gems/mustermann)  - your personal string matching expert; can be used as a plugin for Sinatra 1.x and will power Sinatra 2.0; by Konstantin Haase et al
 
 
 ## Volt
