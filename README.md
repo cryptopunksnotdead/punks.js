@@ -39,7 +39,7 @@ Note: :gem: stands for the RubyGems page, :octocat: stands for the GitHub page a
 
 ## Rack 'n' Alternatives
 
-_A Ruby webserver interface lets you mix-n-match web servers and web frameworks; stack web apps inside web apps inside web apps_
+_A Ruby webserver interface - lets you mix-n-match web servers and web frameworks; stack web apps inside web apps inside web apps_
 
 See the [Awesome Rack List »](https://github.com/planetruby/awesome-rack).
 
@@ -113,12 +113,12 @@ _JSON HTTP API Builder_
 - **Rum** (github: [chneukirchen/rum](https://github.com/chneukirchen/rum)) - gRand Unified Mapper for rack apps by Christian Neukirchen
 - **Cuba** (web: [cuba.is](http://cuba.is), github: [soveran/cuba](https://github.com/soveran/cuba), gem: [cuba](https://rubygems.org/gems/cuba)) - tiny but powerful mapper for rack apps by Michel Martens
 - **New York, New York (NYNY)** (web: [alisnic.github.io/nyny](http://alisnic.github.io/nyny), github:  [alisnic/nyny](https://github.com/alisnic/nyny), gem: [nyny](https://rubygems.org/gems/nyny))  -  a tiny (~300 lines of code) web framework on top of rack by Andrei Lisnic
-- [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:gem:](https://rubygems.org/gems/roda), [:book:](http://rubydoc.info/gems/roda)  - a routing tree web framework toolkit by Jeremy Evans
-- [Hobbit :octocat:](https://github.com/patriciomacadden/hobbit), [:gem:](https://rubygems.org/gems/hobbit), [:book:](http://rubydoc.info/gems/hobbit) - a minimalistic microframework built on top of rack by Patricio Mac Adden
-- [Brooklyn :octocat:](https://github.com/luislavena/brooklyn) - a small web tool on top of rack by Luis Lavena
-- [Nancy](http://guilleiguaran.github.io/nancy), [:octocat:](https://github.com/guilleiguaran/nancy), [:gem:](https://rubygems.org/gems/nancy), [:book:](http://rubydoc.info/gems/nancy) - Sinatra's little daughter by Guillermo Iguaran
-- [Camping](http://camping.io), [:octocat:](https://github.com/camping), [:gem:](https://rubygems.org/gems/camping), [:book:](http://www.rubydoc.info/gems/camping) - minature rails for stay-at-home moms; the 4k pocket full-of-gags web microframework
-- [Scorched](http://scorchedrb.com), [:octocat:](https://github.com/Wardrop/Scorched), [:gem:](https://rubygems.org/gems/scorched), [:book:](http://rubydoc.info/gems/scorched)  -  light-weight, DRY as a desert, web framework by Tom Wardrop et al
+- **Roda** (web: [roda.jeremyevans.net](http://roda.jeremyevans.net), github: [jeremyevans/roda](https://github.com/jeremyevans/roda), gem: [roda](https://rubygems.org/gems/roda))  - a routing tree web framework toolkit by Jeremy Evans
+- **Hobbit** (github: [patriciomacadden/hobbit](https://github.com/patriciomacadden/hobbit), gem:  [hobbit](https://rubygems.org/gems/hobbit)) - a minimalistic microframework built on top of rack by Patricio Mac Adden
+- **Brooklyn** (github: [luislavena/brooklyn](https://github.com/luislavena/brooklyn)) - a small web tool on top of rack by Luis Lavena
+- **Nancy** (web: [guilleiguaran.github.io/nancy](http://guilleiguaran.github.io/nancy), github: [guilleiguaran/nancy](https://github.com/guilleiguaran/nancy), gem: [nancy](https://rubygems.org/gems/nancy)) - Sinatra's little daughter by Guillermo Iguaran
+- **Camping** (web: [camping.io](http://camping.io), github: [camping/camping](https://github.com/camping/camping), gem: [camping](https://rubygems.org/gems/camping)) - minature rails for stay-at-home moms; the 4k pocket full-of-gags web microframework
+- **Scorched** (web: [scorchedrb.com](http://scorchedrb.com), github: [Wardrop/Scorched](https://github.com/Wardrop/Scorched), gem: [scorched](https://rubygems.org/gems/scorched))  -  light-weight, DRY as a desert, web framework by Tom Wardrop et al
 
 
 <!--
@@ -130,22 +130,22 @@ _JSON HTTP API Builder_
 
 ## "Full Stack" Macro Framework Alternatives
 
-- [Lotus HQ](http://lotusrb.org) - [:octocat:](https://github.com/lotus), [:gem:](https://rubygems.org/gems/lotusrb), [:book:](http://rubydoc.info/gems/lotusrb)  - a complete web framework; bringing back object-oriented programming to web development, leveraging a stable API, minimal DSL and plain objects  by Luca Guidi et al
+- **Lotus** (web: [lotusrb.org](http://lotusrb.org), github: [lotus/lotus](https://github.com/lotus/lotus), gem: [lotusrb](https://rubygems.org/gems/lotusrb))  - a complete web framework; bringing back object-oriented programming to web development, leveraging a stable API, minimal DSL and plain objects  by Luca Guidi et al
     - [News & Updates](http://lotusrb.org/blog)
 
 <!-- new list -->
 
-- [Pakyow HQ](http://pakyow.org) - [:octocat:](https://github.com/pakyow), [:gem:](https://rubygems.org/gems/pakyow) - an open-source framework for the modern web with a view-first development process that's friendly to everyone whether you're a designer or a developer
+- **Pakyow** (web: [pakyow.org](http://pakyow.org), github: [pakyow/pakyow](https://github.com/pakyow/pakyow), gem:  [pakyow](https://rubygems.org/gems/pakyow)) - an open-source framework for the modern web with a view-first development process that's friendly to everyone whether you're a designer or a developer
     - [News & Updates](http://pakyow.org/blog)
 
 <!-- new list -->
 
-- [Ramaze HQ](http://ramaze.net) - [:octocat:](https://github.com/Ramaze), [:gem:](https://rubygems.org/gems/ramaze), [:book:](http://rubydoc.info/gems/ramaze) - a simple, light and modular open-source web application framework by Michael Fellinger et al
+- **Ramaze** (web: [ramaze.net](http://ramaze.net), github: [Ramaze/ramaze](https://github.com/Ramaze/ramaze), gem: [ramaze](https://rubygems.org/gems/ramaze)) - a simple, light and modular open-source web application framework by Michael Fellinger et al
     - [News & Updates](http://ramaze.net/blog)
 
 ## More / Misc Frameworks
 
-- [Webmachine HQ :octocat:](https://github.com/Webmachine/webmachine-ruby), [:gem:](https://rubygems.org/gems/webmachine) - a HTTP toolkit - a port of the Webmachine in Erlang - for building apps in a declarative way e.g. less concerned with the procedures involved in handling requests directly and more with describing facts about the resources that make up your app; by Sean Cribbs et al
+- **Webmachine** (github: [Webmachine/webmachine-ruby](https://github.com/Webmachine/webmachine-ruby), gem: [webmachine](https://rubygems.org/gems/webmachine)) - an HTTP toolkit - a port of the Webmachine in Erlang - for building apps in a declarative way e.g. less concerned with the procedures involved in handling requests directly and more with describing facts about the resources that make up your app; by Sean Cribbs et al
 
 
  
