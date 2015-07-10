@@ -93,7 +93,7 @@ _Client/Server Isomorphic Framework_
 
 - **Cramp** (github: [lifo/cramp](https://github.com/lifo/cramp), gem: [cramp](https://rubygems.org/gems/cramp)) - a fully asynchronous realtime web application framework built on top of event machine; providing full-duplex bi-directional communication by Pratik Naik
 
-- **Lattice** (github: [celluloid/lattice](https://github.com/celluloid/lattice), gem: [lattice](https://rubygems.org/gems/lattice) -  an actor-based web framework built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
+- **Lattice** (github: [celluloid/lattice](https://github.com/celluloid/lattice), gem: [lattice](https://rubygems.org/gems/lattice)) -  an actor-based web framework built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
 
 - **Angelo** (github: [kenichi/angelo](https://github.com/kenichi/angelo), gem: [angelo](https://rubygems.org/gems/angelo)) - sinatra-like mini-language for reel (built upon Celluloid::IO, no rack);  supports web sockets and server sent events (SSE) by Kenichi Nakamura
    
@@ -103,16 +103,16 @@ _Client/Server Isomorphic Framework_
 
 _JSON HTTP API Builder_
 
-- [Grape](http://intridea.github.io/grape) - [:octocat:](https://github.com/intridea/grape), [:gem:](https://rubygems.org/gems/grape), [:book:](http://rubydoc.info/gems/grape)  - a micro-framework for creating REST-like APIs
-- [Crêpe :octocat:](https://github.com/crepe) - [:gem:](https://rubygems.org/gems/crepe) - a thin API stack
-- [Yaks :octocat:](https://github.com/plexus/yaks) - [:gem:](https://rubygems.org/gems/yaks), [:book:](http://rubydoc.info/gems/yaks) - serialize to hypermedia. HAL, JSON API, HALO, collection+JSON etc. by Arne Brasseur et al
-- [Praxis](http://praxis-framework.io) - [:octocat:](https://github.com/rightscale/praxis), [:gem:](https://rubygems.org/gems/praxis), [:book:](http://rubydoc.info/gems/praxis)  - a micro framework focusing on the design and coding aspects of creating good APIs quick by Josep M. Blanquer et al
+- **Grape** (web: [intridea.github.io/grape](http://intridea.github.io/grape), github:  [intridea/grape](https://github.com/intridea/grape), gem: [grape](https://rubygems.org/gems/grape)) - a micro-framework for creating REST-like APIs
+- **Crêpe** (github: [crepe/crepe](https://github.com/crepe), gem: [crepe](https://rubygems.org/gems/crepe)) - a thin API stack
+- **Yaks** (github: [plexus/yaks](https://github.com/plexus/yaks), gem: [yaks](https://rubygems.org/gems/yaks)) - serialize to hypermedia. HAL, JSON API, HALO, collection+JSON etc. by Arne Brasseur et al
+- **Praxis** (web: [praxis-framework.io](http://praxis-framework.io), github: [rightscale/praxis](https://github.com/rightscale/praxis), gem: [praxis](https://rubygems.org/gems/praxis)) - a micro framework focusing on the design and coding aspects of creating good APIs quick by Josep M. Blanquer et al
 
 ## Micro Framework Alternatives
 
-- [Rum :octocat:](https://github.com/chneukirchen/rum) - gRand Unified Mapper for rack apps by Christian Neukirchen
-- [Cuba](http://cuba.is) - [:octocat:](https://github.com/soveran/cuba), [:gem:](https://rubygems.org/gems/cuba), [:book:](http://rubydoc.info/gems/cuba) - tiny but powerful mapper for rack apps by Michel Martens
-- [New York, New York (NYNY)](http://alisnic.github.io/nyny) - [:octocat:](https://github.com/alisnic/nyny), [:gem:](https://rubygems.org/gems/nyny), [:book:](http://rubydoc.info/gems/nyny)  -  a tiny (~300 lines of code) web framework on top of rack by Andrei Lisnic
+- **Rum** (github: [chneukirchen/rum](https://github.com/chneukirchen/rum)) - gRand Unified Mapper for rack apps by Christian Neukirchen
+- **Cuba** (web: [cuba.is](http://cuba.is), github: [soveran/cuba](https://github.com/soveran/cuba), gem: [cuba](https://rubygems.org/gems/cuba)) - tiny but powerful mapper for rack apps by Michel Martens
+- **New York, New York (NYNY)** (web: [alisnic.github.io/nyny](http://alisnic.github.io/nyny), github:  [alisnic/nyny](https://github.com/alisnic/nyny), gem: [nyny](https://rubygems.org/gems/nyny))  -  a tiny (~300 lines of code) web framework on top of rack by Andrei Lisnic
 - [Roda](http://roda.jeremyevans.net) - [:octocat:](https://github.com/jeremyevans/roda), [:gem:](https://rubygems.org/gems/roda), [:book:](http://rubydoc.info/gems/roda)  - a routing tree web framework toolkit by Jeremy Evans
 - [Hobbit :octocat:](https://github.com/patriciomacadden/hobbit), [:gem:](https://rubygems.org/gems/hobbit), [:book:](http://rubydoc.info/gems/hobbit) - a minimalistic microframework built on top of rack by Patricio Mac Adden
 - [Brooklyn :octocat:](https://github.com/luislavena/brooklyn) - a small web tool on top of rack by Luis Lavena
