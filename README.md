@@ -79,23 +79,23 @@ Fun / Hack
 
 Future
 
-- **Mustermann** (web: [rkh.github.io/mustermann](http://rkh.github.io/mustermann), github: [rkh/mustermann](https://github.com/rkh/mustermann), [mustermann](https://rubygems.org/gems/mustermann)  - your personal string matching expert; can be used as a plugin for Sinatra 1.x and will power Sinatra 2.0; by Konstantin Haase et al
+- **Mustermann** (web: [rkh.github.io/mustermann](http://rkh.github.io/mustermann), github: [rkh/mustermann](https://github.com/rkh/mustermann), gem: [mustermann](https://rubygems.org/gems/mustermann))  - your personal string matching expert; can be used as a plugin for Sinatra 1.x and will power Sinatra 2.0; by Konstantin Haase et al
 
 
 ## Volt
 
 _Client/Server Isomorphic Framework_
 
-- [Volt HQ](http://voltframework.com) - [:octocat:](https://github.com/voltrb), [:gem:](https://rubygems.org/gems/volt),  [:book:](http://rubydoc.info/gems/volt)
+- **Volt** (web: [voltframework.com](http://voltframework.com), github: [voltrb/volt](https://github.com/voltrb), gem: [volt](https://rubygems.org/gems/volt))
     - [News & Updates](http://voltframework.com/blog)
 
 ## Async Web (Socket) Frameworks
 
-- [Cramp :octocat:](https://github.com/lifo/cramp), [:gem:](https://rubygems.org/gems/cramp) - a fully asynchronous realtime web application framework built on top of event machine; providing full-duplex bi-directional communication by Pratik Naik
+- **Cramp** (github: [lifo/cramp](https://github.com/lifo/cramp), gem: [cramp](https://rubygems.org/gems/cramp)) - a fully asynchronous realtime web application framework built on top of event machine; providing full-duplex bi-directional communication by Pratik Naik
 
-- [Lattice :octocat:](https://github.com/celluloid/lattice), [:gem:](https://rubygems.org/gems/lattice), [:book:](http://rubydoc.info/gems/lattice) -  an actor-based web framework built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
+- **Lattice** (github: [celluloid/lattice](https://github.com/celluloid/lattice), gem: [lattice](https://rubygems.org/gems/lattice) -  an actor-based web framework built on top of celluloid, reel, and webmachine; designed for realtime apps, end-to-end streaming, and websockets by Tony Arcieri et al
 
-- [Angelo :octocat:](https://github.com/kenichi/angelo), [:gem:](https://rubygems.org/gems/angelo) - sinatra-like mini-language for reel (built upon Celluloid::IO, no rack);  supports web sockets and server sent events (SSE) by Kenichi Nakamura
+- **Angelo** (github: [kenichi/angelo](https://github.com/kenichi/angelo), gem: [angelo](https://rubygems.org/gems/angelo)) - sinatra-like mini-language for reel (built upon Celluloid::IO, no rack);  supports web sockets and server sent events (SSE) by Kenichi Nakamura
    
 
 
