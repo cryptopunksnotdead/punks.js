@@ -13,6 +13,7 @@
 # Ruby
 
 - <https://spin.atomicobject.com/2016/05/11/adts-monads-ruby/>
+- <https://spin.atomicobject.com/2016/05/12/ruby-functional-programming-monads/>
 - <https://github.com/nkpart/adt>
   
   
