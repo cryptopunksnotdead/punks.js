@@ -86,8 +86,10 @@ puts "Area of square that has side #{square.side}: #{Shape.area(square)}"
 
 rect = Rectangle(5, 10)
 puts "Area of rectangle that has height #{rect.height} and width #{rect.width} is #{Shape.area(rect)}"
+```
 
 
+``` ruby
 ## Result Data Types
 
 data :Result, :Ok  { msg: '' },        # rust-like "short" form
