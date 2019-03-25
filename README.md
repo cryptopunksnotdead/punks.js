@@ -53,6 +53,55 @@ Message.match( msg ) {
 }
 
 ...
+
+
+
+data :Shape, :Circle,    { radius: 0 },
+             :Square,    { side: 0 },
+             :Rectangle, { height: 0, width: 0 }
+
+shape = Circle(15)
+# -or-
+shape = Square(10)
+# -or-
+shape = Rectangle(5, 10)
+
+def Shape.area(shape) { 
+      match shape, 
+          Circle:    ->(radius) { Math.PI * radius * radius },
+          Square:    ->(s)      { s * s }
+          Rectangle: ->(h, w)   { h * w }
+}
+
+
+circle = Circle(15)
+puts "Area of circle that has radius #{circle.radius}: #{Shape.area(circle)}"
+
+square = Square(10)
+puts "Area of square that has side #{square.side}: #{Shape.area(square)}"
+
+rect = Rectangle(5, 10)
+puts "Area of rectangle that has height #{rect.height} and width #{rect.width} is #{Shape.area(rect)}"
+
+
+## Result Data Types
+
+data :Result, :Ok  { msg: '' },        # rust-like "short" form
+              :Err { msg: ''}
+
+data :Result, :Success { msg: '' },    # haskell-like "long" form 
+              :Failure { msg: '' }
+
+
+## Optional / Maybe Data Types
+
+data :Optional,  :Some { value: T }    # note: T is a TypeVar
+                 :None
+
+data :Maybe,     :Just { value: T }
+                 :Nothing
+
+...
 ```
 
 
