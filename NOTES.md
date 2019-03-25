@@ -10,3 +10,9 @@
 - use two types of variants - tagged (with union) and untagged - why? why not?
 
   
+# F-Sharp
+
+<https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions>
+
+
+
