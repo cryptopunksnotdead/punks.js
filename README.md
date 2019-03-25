@@ -123,6 +123,40 @@ puts Tree.sum( tree )    #=> 10
 ...
 ```
 
+<!--
+add qualified access option - why? why not?
+-->
+
+``` ruby
+data :Expression, :Number,  { n: 0 },
+                  :Add,     { x: 0, y: 0 },  
+                  :Multiply { x: 0, y: 0 },
+                  :Variable { id: '' }
+
+def Expression.evaluate( env, exp )
+    match exp,
+      Number:   ->(n) { n },
+      Add:      ->(x, y) { evaluate( env, x ) + evaluate( evn, y ),
+      Multiply: ->(x, y) { evaluate( env, x ) * evaluate( env, y ),
+      Variable: ->(id)   { env[id] }
+end
+
+env = {"a" => 1,
+       "b" => 2,
+       "c" => 3}
+
+## Create an expression tree that represents
+## the expression: a + 2 * b.
+exp = Add( Variable("a"),
+           Multiply( Number(2), Variable("b"))
+
+## Evaluate the expression a + 2 * b, given the
+## table of values for the variables.
+result = Expression.evaluate( env, exp ) #=> 5
+# When this code is executed, the value of result is 5.
+```
+
+
 ``` ruby
 ## Result Data Types
 
