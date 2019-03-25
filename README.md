@@ -43,6 +43,11 @@ Message.match msg,
   Write:       ->(text)  { puts "Text message: #{text}" },
   ChangeColor: ->(r,g,b) { puts "Change color to red: #{r} / green: #{g} / blue: #{b}" }
 
+...
+```
+
+<!--
+  # use / add "alternative" match block - why? why not?
 # -or-
 
 Message.match( msg ) {
@@ -51,11 +56,10 @@ Message.match( msg ) {
   on Write       { |text|  puts "Text message: #{text}" }
   on ChangeColor { |r,g,b| puts "Change color to red: #{r} / green: #{g} / blue: #{b}" }
 }
-
-...
-
+-->
 
 
+``` ruby
 data :Shape, :Circle,    { radius: 0 },
              :Square,    { side: 0 },
              :Rectangle, { height: 0, width: 0 }
@@ -103,6 +107,9 @@ data :Maybe,     :Just { value: T }
 
 ...
 ```
+
+
+
 
 
 
