@@ -66,12 +66,12 @@ shape = Square(10)
 # -or-
 shape = Rectangle(5, 10)
 
-def Shape.area(shape) { 
+def Shape.area( shape )
       match shape, 
           Circle:    ->(radius) { Math.PI * radius * radius },
           Square:    ->(s)      { s * s }
           Rectangle: ->(h, w)   { h * w }
-}
+end
 
 
 circle = Circle(15)
