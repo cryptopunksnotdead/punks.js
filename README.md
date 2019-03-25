@@ -11,8 +11,48 @@ safedata gem / library - safe (algebraic) union data types with enumerated varia
 
 ## Usage
 
-To be done
+``` ruby
+Union.new( :Message, :Quit,
+                     :Move, {x:0, y:0},
+                     :Write, {text:''},
+                     :ChangeColor, {r:0, g:0, b:0} )
+# -or-
+data :Message, [:Quit,
+                :Move, {x:0, y:0},
+                :Write, {text:''},
+                :ChangeColor, {r:0, g:0, b:0}]
+# -or-
+data :Message, :Quit,
+               :Move, {x:0, y:0},
+               :Write, {text:''},
+               :ChangeColor, {r:0, g:0, b:0}
 
+
+msg = Quit()
+# -or-
+msg = Move(2,3)
+# -or-
+msg = Write("Hello")
+# -or-
+msg = ChangeColor(0, 160, 255)
+
+
+Message.match msg,
+  Quit: ->() {
+    puts "Quit has no data"
+  },
+  Move: ->(x,y) {
+    puts "Move in the x: #{x} / y: #{y} direction"
+  },
+  Write: ->(text) {
+    puts "Text message: #{text}"
+  },
+  ChangeColor: ->(r,g,b) {
+    puts "Change color to red: #{r} / green: #{g} / blue: #{b}"
+  }
+
+...
+```
 
 
 
@@ -24,13 +64,20 @@ Use like:
 
 ``` ruby
 Enum.new( :Color, :red, :green, :blue )
-## or
+# -or-
 enum :Color, :red, :green, :blue
-## or
+# -or-
 enum :Color, [:red, :green, :blue]
 ```
 
 See the [enums library documentation for more »](https://github.com/s6ruby/enums)
+
+
+
+
+## More Safe Data Structures (Array, Hash, Struct)
+
+[Safe Data Structures (Array, Hash, Struct)](https://github.com/s6ruby/safestruct) - Say goodbye to null / nil (and maybe) and the Billion-Dollar mistake. Say hello to zero and the Billon-Dollar fix.
 
 
 
