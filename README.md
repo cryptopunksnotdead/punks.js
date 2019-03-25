@@ -1,7 +1,7 @@
 
-# Safe (Algebraic) Union Data Types (With Enumerated Variants)
+# Safe (Algebraic) Union Data Types With (Enumerated) Variants
 
-safedata gem / library - safe (algebraic) union data types with enumerated variants
+safedata gem / library - safe (algebraic) union data types with (enumerated) variants
 
 * home  :: [github.com/s6ruby/safedata](https://github.com/s6ruby/safedata)
 * bugs  :: [github.com/s6ruby/safedata/issues](https://github.com/s6ruby/safedata/issues)
