@@ -89,6 +89,40 @@ puts "Area of rectangle that has height #{rect.height} and width #{rect.width} i
 ```
 
 
+
+<!--
+data :Tree, :Tip,
+            :Node { value: 0, left: Tree(0), right: Tree(0) }
+
+or possible?
+data :Tree, :Tip,
+            :Node, { value: 0, left: Tip(), right: Tip() }
+
+-->
+
+```ruby
+data :Tree, :Tip,
+            :Node, { value: 0, left: Tip(), right: Tip() }
+# -or- 
+data :Tree, :Tip,
+            :Node, [:value, :left, :right]
+
+
+tree = Node(0, Node(1, Node(2, Tip(), Tip()), 
+                       Node(3, Tip(), Tip())), 
+                       Node(4, Tip(), Tip()))
+
+def Tree.sum( tree )
+  match tree,
+    Tip:  ->()                   { 0 }
+    Node: ->(value, left, right) { value + sum(left) + sum(right) }
+end
+
+
+puts Tree.sum( tree )    #=> 10
+...
+```
+
 ``` ruby
 ## Result Data Types
 
