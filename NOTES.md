@@ -9,6 +9,12 @@
 
 - use two types of variants - tagged (with union) and untagged - why? why not?
 
+
+# Ruby
+
+- <https://spin.atomicobject.com/2016/05/11/adts-monads-ruby/>
+- <https://github.com/nkpart/adt>
+  
   
 # F-Sharp
 
@@ -27,3 +33,6 @@
 - <https://docs.racket-lang.org/phc-adt-implementation/phc-adt_adtadt.html>
 - <https://www.cs.cornell.edu/courses/cs3110/2019sp/textbook/data/algebraic_data_types.html>
 
+<!-->
+
+- <https://en.wikipedia.org/wiki/Algebraic_data_type>
