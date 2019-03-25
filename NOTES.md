@@ -12,7 +12,8 @@
   
 # F-Sharp
 
-<https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions>
+- <https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/discriminated-unions>
+- <https://docs.microsoft.com/en-us/dotnet/fsharp/language-reference/results>
 
 
 
