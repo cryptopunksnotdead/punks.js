@@ -27,6 +27,8 @@
 
 # More
 
+- <https://blog.softwaremill.com/algebraic-data-types-in-four-languages-858788043d4e>
+- <https://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions>
 - <http://2ality.com/2017/12/variants-reasonml.html>
 - <http://patshaughnessy.net/2018/3/15/how-rust-implements-tagged-unions>
 - <https://eli.thegreenplace.net/2018/go-and-algebraic-data-types/>
