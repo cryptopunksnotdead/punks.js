@@ -38,18 +38,19 @@ msg = ChangeColor(0, 160, 255)
 
 
 Message.match msg,
-  Quit: ->() {
-    puts "Quit has no data"
-  },
-  Move: ->(x,y) {
-    puts "Move in the x: #{x} / y: #{y} direction"
-  },
-  Write: ->(text) {
-    puts "Text message: #{text}"
-  },
-  ChangeColor: ->(r,g,b) {
-    puts "Change color to red: #{r} / green: #{g} / blue: #{b}"
-  }
+  Quit:        ->()      { puts "Quit has no data" },
+  Move:        ->(x,y)   { puts "Move in the x: #{x} / y: #{y} direction" },
+  Write:       ->(text)  { puts "Text message: #{text}" },
+  ChangeColor: ->(r,g,b) { puts "Change color to red: #{r} / green: #{g} / blue: #{b}" }
+
+# -or-
+
+Message.match( msg ) {
+  on Quit        {         puts "Quit has no data" }
+  on Move        { |x,y|   puts "Move in the x: #{x} / y: #{y} direction" }
+  on Write       { |text|  puts "Text message: #{text}" }
+  on ChangeColor { |r,g,b| puts "Change color to red: #{r} / green: #{g} / blue: #{b}" }
+}
 
 ...
 ```
