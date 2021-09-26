@@ -7,15 +7,15 @@ In your head of your web page add:
 
 ``` html
   <!-- i) pull in pixel art and punk drawing machinery / library code -->
-  <script src="https://cryptopunksnotdead.github.io/sandbox/lib/pixelart.js"></script>
+  <script src="lib/pixelart.js"></script>
 
   <!-- ii) pull in some (shared) punk pixel art designs (e.g. alien, demon, etc.) -->
-  <script src="https://cryptopunksnotdead.github.io/sandbox/designs.js"></script>
+  <script src="designs.js"></script>
 ```
 
 ## Step 2 - For every punk that you want to draw add a canvas
 
-Let's draw two punks - the first in the original 24x24 format (zoom=1)  
+Let's draw two punks - the first in the original 24x24 format (zoom=1)
 and the second with a 8x zoom. Add in the body of your web page
 two canvas "placeholder" elements with (unique) ids (e.g. `punk` for the first and `punk8x` for the second):
 
@@ -25,9 +25,9 @@ two canvas "placeholder" elements with (unique) ids (e.g. `punk` for the first a
 ```
 
 
-## Step 3- Draw the punks using any punk type or attribute from the punk building blocks and any zoom (original, 2x, 4x, etc) 
+## Step 3- Draw the punks using any punk type or attribute from the punk building blocks and any zoom (original, 2x, 4x, etc)
 
-Add an inline script block that uses the `drawPunk( id, [design, design, design, ...], zoom=1)` 
+Add an inline script block that uses the `drawPunk( id, [design, design, design, ...], zoom=1)`
 method to draw the punk according to your specs on the canvas:
 
 ``` html
@@ -35,9 +35,9 @@ method to draw the punk according to your specs on the canvas:
     drawPunk( '#punk',   [alien, headband] );
     drawPunk( '#punk8x', [zombie, knittedcap, lasereyes], 8 );
 </script>
-``` 
+```
 
-That's it.    Open up the web page and enjoy your punks.  Try [`punks.html`](https://cryptopunksnotdead.github.io/sandbox/draw/punks.html) to see an online live copy.
+That's it.    Open up the web page and enjoy your punks.  Try [`punks.html`](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/draw/punks.html) to see an online live copy.
 
 
 ## Questions? Comments?
@@ -57,10 +57,10 @@ Bonus:  All together now - for easy cut-n-paste and reference:
 <head>
   <!-- step 1: pull in shared library and designs -->
    <!-- i) pull in pixel art and punk drawing machinery / library code -->
-  <script src="https://cryptopunksnotdead.github.io/sandbox/lib/pixelart.js"></script>
+  <script src="lib/pixelart.js"></script>
 
   <!-- ii) pull in some (shared) punk pixel art designs (e.g. alien, demon, etc.) -->
-  <script src="https://cryptopunksnotdead.github.io/sandbox/designs.js"></script>
+  <script src="designs.js"></script>
 </head>
 <body>
 
@@ -77,5 +77,3 @@ Bonus:  All together now - for easy cut-n-paste and reference:
 ```
 
 Save as [`punks.html`](punks.html) and open up in your browser to enjoy your punks.
-Try [`punks.html`](https://cryptopunksnotdead.github.io/sandbox/draw/punks.html) to see an online live copy.
-

@@ -10,7 +10,7 @@
 Draw Punks on Canvas in JavaScript from Punk Building Blocks / Designs in the Pixel Art Text ("ASCII") Format
 
 
-[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/pixelart/),
+[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/pixelart/) •
 [More »](pixelart/pixelart)
 
 
@@ -18,7 +18,7 @@ Draw Punks on Canvas in JavaScript from Punk Building Blocks / Designs in the Pi
 
 Generate Random Punks on Canvas in JavaScript from Pixel Art Building Blocks / Designs in Text ("ASCII") Format
 
-[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/random/),
+[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/random/) •
 [More »](pixelart/random)
 
 
@@ -26,7 +26,7 @@ Generate Random Punks on Canvas in JavaScript from Pixel Art Building Blocks / D
 
 How to Draw Punks on Canvas (in JavaScript) from Scratch / Zero Using Punk Building Blocks in Pixel Art "ASCII" Text Format
 
-[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/draw/),
+[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/draw/punks) •
 [More »](pixelart/draw)
 
 
