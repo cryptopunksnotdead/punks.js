@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+  <meta charset="utf-8">
+
+
+  <style type="text/css">
+   *,
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+
+   #canvas {
+       -webkit-touch-callout: none;
+       -webkit-user-select: none;
+       -khtml-user-select: none;
+       -moz-user-select: none;
+       -ms-user-select: none;
+       user-select: none;
+   }
+
+   .color {
+       color: #eeeeee;
+   }
+
+   .row {
+       height: 14px;
+   }
+
+   .cell {
+       width: 14px;
+       height: 14px;
+       display: inline-block;
+   }
+
+   .grid .cell {
+       border-top: 1px solid #aaa;
+       border-right: 1px solid #aaa;
+   }
+
+   .cell.filled {
+       background-color: #000000;
+   }
+
+   textarea {
+       width: 100%;
+       height: 400px;
+       font-size: 9px;
+   }
+  </style>
+
+
+
+  <title>Punk Pixel Drawing Tool - Yes, You Can! - Draw Your Own 24x24 Avatars That You Own 100% Forever</title>
+
+
+  <script type="text/javascript" src="lib3rd/jquery-3.2.1.min.js"></script>
+
+  <script type="text/javascript" src="lib/colors.js"></script>
+  <script type="text/javascript" src="lib/pixelart.js"></script>
+
+  <script type="text/javascript" src="designs.js"></script>
+
+  <!-- move lib/setup.js to end of file/page - no need to use onload? - better (more modern) practice?
+       why? why not?
+    -->
+  <script type="text/javascript" src="lib/setup.js"></script>
+</head>
+ <body>
+
+  <div id="new-explanatory-text" style="margin: 20px; padding: 10px; border: 1px solid #ccc;">
+      <h2>Punk Pixel Drawing Tool - Yes, You Can! - Draw Your Own Free 24x24 Avatars That You Own 100% Forever</h2>
+      <p>
+        Help - Left click puts a pixel down, right click clears it.
+        For more see <b><a href="https://github.com/cryptopunksnotdead/punks.design">/punks.design »</a></b>
+      </p>
+       <p>
+           Questions? Comments?
+           Post them on the
+           <b><a href="https://old.reddit.com/r/CryptoPunksDev">CryptoPunksDev reddit</a></b>. Thanks.
+       </p>
+      <p>
+  </div>
+
+
+  <div id="canvas" class="grid" oncontextmenu="return false;">
+  </div>
+
+  <input id="c1" type="radio" name="color" value="1" checked>
+  <input class="color" id="color1" value="003033">   <!-- was 331a00 -->
+
+  <input id="c2" type="radio" name="color" value="2">
+  <input class="color" id="color2" value="006166">   <!-- was 663300 -->
+
+  <input id="c3" type="radio" name="color" value="3">
+  <input class="color" id="color3" value="00dae6">  <!-- was e67300 -->
+
+  <input id="c4" type="radio" name="color" value="4">
+  <input class="color" id="color4" value="66f7ff">  <!-- was ffb366 -->
+
+  <input id="c5" type="radio" name="color" value="5">
+  <input class="color" id="color5" value="99ffc0">  <!-- was ff9999 -->
+
+  <input id="c6" type="radio" name="color" value="6">
+  <input class="color" id="color6" value="00bb00">
+
+
+  <div>
+      <input id="chars"  value=".@xo^~%*+=:"> <!-- use for assci chars!!! -->
+      <button id="reset">
+    ⊘ Reset
+      </button>
+      <button id="print">
+    ↓ Print
+      </button>
+      <button id="read">
+    ↑ Read
+      </button>
+      <button id="redraw">
+    ↺ Redraw
+      </button>
+      <button id="palette">
+    Randomize (Colors)
+      </button>
+      <button id="design">
+    Randomize (Design)
+      </button>
+
+      <input name="grid" type="checkbox" id="grid" checked>
+      <label for="grid">Grid</label>
+      <button id="png">
+    PNG
+      </button>
+      <input id="pngPixelSize" type="number" value="3"> <!-- was 10 -->
+  </div>
+  <div>
+      <textarea id="out" spellcheck="false"></textarea>
+  </div>
+  <img id="png-out" style="border:2px solid"></img>
+  <div id="license" style="margin: 20px; padding: 10px; border: 1px solid #ccc; font-size: 0.5em; color: #555">
+        <p>Based on the Pixel Drawing Tool by <a href="https://mooncatrescue.com/pixeleditor">Ponderware Ltd.</a></p>
+        </p>
+  </div>
+</body>
+</html>
