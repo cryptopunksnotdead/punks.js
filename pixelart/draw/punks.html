@@ -1,0 +1,27 @@
+<head>
+  <!-- i) pull in pixel art and punk drawing machinery / library code
+          use local version (see below) or
+          use online version (full internet address location change src to
+             https://cryptopunksnotdead.github.io/sandbox/lib/pixelart.js
+    -->
+  <script src="../lib/pixelart.js"></script>
+
+  <!-- ii) pull in some (shared) punk pixel art designs (e.g. alien, demon, etc.)
+           use local version (see below)  or
+           use online version change src to
+              https://cryptopunksnotdead.github.io/sandbox/designs.js
+    -->
+  <script src="../designs.js"></script>
+</head>
+<body>
+
+   <!-- step 2: prepare two "placeholder" canvas with (unique) ids -->
+     <canvas id='punk'></canvas>
+  8x <canvas id='punk8x'></canvas>
+
+  <!-- step 3: let's draw two punks -->
+  <script>
+    drawPunk( '#punk',   [alien, headband] );
+    drawPunk( '#punk8x', [zombie, knittedcap, lasereyes], 8 );
+  </script>
+</body>

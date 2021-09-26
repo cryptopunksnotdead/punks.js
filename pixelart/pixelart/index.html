@@ -1,0 +1,73 @@
+<head>
+  <!-- 1) pull in pixel art and punk drawing machinery / library code -->
+  <script type="text/javascript" src="../lib/pixelart.js"></script>
+
+  <!-- 2) pull in some (shared) punk pixel art designs (e.g. alien, demon, etc.) -->
+  <script type="text/javascript" src="../designs.js"></script>
+</head>
+<body>
+  <h1>Draw Punks on Canvas in JavaScript from Punk Building Blocks / Designs in the Pixel Art Text ("ASCII") Format</h1>
+
+  <p>
+    Yes, you can. Use "View page source" to see  how the "magic" works.
+      Or browse the
+      <a href="https://github.com/cryptopunksnotdead/cryptopunksnotdead.github.io/blob/master/sandbox/pixelart/index.html">source on github »</a>
+  </p>
+
+      <canvas id='punk1'></canvas>
+  4x  <canvas id='punk1x4'></canvas>
+  8x  <canvas id='punk1x8'></canvas>
+  20x <canvas id='punk1x20'></canvas>
+
+  <script>
+    // note: add cap to zero-attribute alien "archetype"
+    drawPunk( '#punk1',    [alien, cap] );
+    drawPunk( '#punk1x4',  [alien, cap], 4 );
+    drawPunk( '#punk1x8',  [alien, cap], 8 );
+    drawPunk( '#punk1x20', [alien, cap], 20 );
+  </script>
+
+
+<p>
+  Let's try another one..
+</p>
+
+    <canvas id='punk2'></canvas>
+4x  <canvas id='punk2x4'></canvas>
+8x  <canvas id='punk2x8'></canvas>
+20x <canvas id='punk2x20'></canvas>
+
+<script>
+   // note: add headband to zero-attribute demon "archetype"
+    drawPunk( '#punk2',    [demon, headband] );
+    drawPunk( '#punk2x4',  [demon, headband], 4 );
+    drawPunk( '#punk2x8',  [demon, headband], 8 );
+    drawPunk( '#punk2x20', [demon, headband], 20 );
+</script>
+
+
+<p>
+  Let's try with laser eyes..
+</p>
+
+    <canvas id='punk3'></canvas>    <canvas id='punk4'></canvas>
+4x  <canvas id='punk3x4'></canvas>  <canvas id='punk4x4'></canvas>
+8x  <canvas id='punk3x8'></canvas>  <canvas id='punk4x8'></canvas>
+20x <canvas id='punk3x20'></canvas> <canvas id='punk4x20'></canvas>
+
+<script>
+  // note: add laser eyes
+
+  drawPunk( '#punk3',    [demon, headband, lasereyes] );
+  drawPunk( '#punk3x4',  [demon, headband, lasereyes], 4 );
+  drawPunk( '#punk3x8',  [demon, headband, lasereyes], 8 );
+  drawPunk( '#punk3x20', [demon, headband, lasereyes], 20 );
+
+  drawPunk( '#punk4',    [alien, cap, lasereyes_light] );
+  drawPunk( '#punk4x4',  [alien, cap, lasereyes_light], 4 );
+  drawPunk( '#punk4x8',  [alien, cap, lasereyes_light], 8 );
+  drawPunk( '#punk4x20', [alien, cap, lasereyes_light], 20 );
+</script>
+
+</body>
+

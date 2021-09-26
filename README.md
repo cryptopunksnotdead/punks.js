@@ -2,17 +2,39 @@
 
 
 
+## pixelart.js Samples
 
 
-## Punk Pixel Editor / Drawing Tool - Yes, You Can! - Draw Your Own Free 24x24 Avatars That You Own 100% Forever
+### /pixelart
+
+Draw Punks on Canvas in JavaScript from Punk Building Blocks / Designs in the Pixel Art Text ("ASCII") Format
+
+
+[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/pixelart/),
+[More »](pixelart/pixelart)
+
+
+### /random
+
+Generate Random Punks on Canvas in JavaScript from Pixel Art Building Blocks / Designs in Text ("ASCII") Format
+
+[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/random/),
+[More »](pixelart/random)
+
+
+### /draw
+
+How to Draw Punks on Canvas (in JavaScript) from Scratch / Zero Using Punk Building Blocks in Pixel Art "ASCII" Text Format
+
+[Try Online](https://cryptopunksnotdead.github.io/pixelart.js/pixelart/draw/),
+[More »](pixelart/draw)
+
+
+
+
+## Bonus - Punk Pixel Editor / Drawing Tool - Yes, You Can! - Draw Your Own Free 24x24 Avatars That You Own 100% Forever
 
 Try online @ [**cryptopunksnotdead.github.io/pixelart.js/editor**](https://cryptopunksnotdead.github.io/pixelart.js/editor/)
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,86 @@
+<head>
+  <!-- 1) pull in pixel art and punk drawing machinery / library code -->
+  <script type="text/javascript" src="../lib/pixelart.js"></script>
+
+  <!-- 2) pull in some (shared) punk pixel art designs (e.g. alien, demon, etc.) -->
+  <script type="text/javascript" src="../designs.js"></script>
+</head>
+<body>
+  <h1>Generate Random Punks on Canvas in JavaScript  from Pixel Art Building Blocks / Designs in Text ("ASCII") Format</h1>
+
+  <p>
+    Yes, you can. Use "View page source" to see  how the "magic" works.
+      Or browse the
+      <a href="https://github.com/cryptopunksnotdead/cryptopunksnotdead.github.io/blob/master/sandbox/random/index.html">source on github »</a>
+  </p>
+
+      <canvas id='punk'></canvas>
+  4x  <canvas id='punkx4'></canvas>
+  8x  <canvas id='punkx8'></canvas>
+  20x <canvas id='punkx20'></canvas>
+
+
+   <br>
+
+   <button style="font-size: 400%; color: white; background-color: blue;" onclick="drawRandomPunk();">
+     Generate Random Punk - I'm Feeling Lucky
+  </button>
+
+
+  <script>
+    const face_designs = [human_light, human_darker, alien, ape_alien, zombie, ape_zombie, demon];
+    const hair_designs = [cap, knittedcap, headband];   // hats & hair-dos
+    const eyes_designs = [lasereyes, lasereyes_light];
+
+
+    function randomInteger( max ) {
+       // note:  if max is 2 - gets you 0,1
+       //        if max is 3   gets you 0,1,2
+       //        and so on
+       return Math.floor( Math.random() * max );
+    }
+
+    function randomPick( ary ) {
+       const max = ary.length;
+       const pick = randomInteger( max );
+       return ary[ pick ];
+    }
+
+
+    function randomPunkDesign() {
+         let design = [];
+
+         let face = randomPick( face_designs );
+         design.push( face );
+
+         if( randomInteger(100) > 20 ) { // make it a 80 percentage change
+           // special case for demon only hairband available
+           let hair = (face == demon) ?  headband : randomPick( hair_designs );
+           design.push( hair );
+         }
+
+         if( randomInteger(100) > 75 ) {  // make it a 25 percentage change
+            let eyes = randomPick( eyes_designs );
+            design.push( eyes );
+         }
+
+         return design;
+    }
+
+    function drawPunkAllSizes( design ) {
+        drawPunk( '#punk',    design );
+        drawPunk( '#punkx4',  design, 4 );
+        drawPunk( '#punkx8',  design, 8 );
+        drawPunk( '#punkx20', design, 20 );
+    }
+
+    function drawRandomPunk() {
+        design = randomPunkDesign();
+        drawPunkAllSizes( design );
+    }
+
+    drawRandomPunk();
+    // drawPunkAllSizes( [demon, headband] );
+  </script>
+</body>
+
