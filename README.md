@@ -32,14 +32,24 @@ How to Draw Punks on Canvas (in JavaScript) from Scratch / Zero Using Punk Build
 
 
 
-## Bonus - Punk Pixel Editor / Drawing Tool - Yes, You Can! - Draw Your Own Free 24x24 Avatars That You Own 100% Forever
+## Bonus
+
+###  Punk Pixel Editor / Drawing Tool - Yes, You Can! - Draw Your Own Free 24×24 Avatars That You Own 100% Forever
 
 Try online @ [**cryptopunksnotdead.github.io/pixelart.js/editor**](https://cryptopunksnotdead.github.io/pixelart.js/editor/)
 
 
 
+
+### Design Your Own Matt & John's® Ye Olde' Punk (Anno 2017) (24×24) Wizard
+
+Try online @ [**cryptopunksnotdead.github.io/pixelart.js/yeoldepunks**](https://cryptopunksnotdead.github.io/pixelart.js/yeoldepunks/)
+
+
+
 ## Questions? Comments?
 
-Post them on the [CryptoPunksDev reddit](https://old.reddit.com/r/CryptoPunksDev). Thanks.
+Post them on the [D.I.Y. Punk (Pixel) Art reddit](https://old.reddit.com/r/DIYPunkArt). Thanks.
+
 
 
