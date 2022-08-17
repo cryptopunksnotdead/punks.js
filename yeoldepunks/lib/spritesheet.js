@@ -51,10 +51,15 @@ class Spritesheet {
       let names = {};
       for( let row of rows ) {
          let id = parseInt( row[0] );
-         let name = this._norm_name( row[1] );
-
-         names[ name ] = id;
-      }
+         
+         // note: allow more than one name  (split by pipe e.g. |)
+         //     Marc 2 | Marc Mid  |  Marc Medium
+         let values = row[1].split('|');
+         for( let name of values) {
+            name = this._norm_name( name );
+            names[ name ] = id;
+         }
+     }
 
       return names;
    }
