@@ -46,10 +46,14 @@ Try online @ [**cryptopunksnotdead.github.io/pixelart.js/editor**](https://crypt
 Try online @ [**cryptopunksnotdead.github.io/pixelart.js/yeoldepunks**](https://cryptopunksnotdead.github.io/pixelart.js/yeoldepunks/)
 
 
+### Punk (Text Prompt-To-Image) Quiz
+
+Try online @ [**cryptopunksnotdead.github.io/pixelart.js/quiz**](https://cryptopunksnotdead.github.io/pixelart.js/quiz/)
+
+
 
 ## Questions? Comments?
 
 Post them on the [D.I.Y. Punk (Pixel) Art reddit](https://old.reddit.com/r/DIYPunkArt). Thanks.
-
 
 
