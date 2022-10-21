@@ -1,224 +1,121 @@
-<!--
-  quiz:
-
-     show text (attribute) prompt
-
-  - guess punk  (in four variants a/b/c/d)
-  - use same no of attributes 0 (8 total) ... 6 (11 total) ?
-
-  tip: run local webserver in ruby:
-     $ ruby -run -e httpd . -p 8000
-
--->
-
-
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Quiz</title>
-        <meta charset="utf-8">
+      <meta charset="utf-8">
+      <title>Quiz</title>
         <style>
+            body {
+               background: silver;
+               text-align: center;
+
+            }
+            .question {
+               width: 800px;
+               font-size: 20px;
+              background: #C2CFE4; border-radius: 70px;
+             border: 20px solid #264B87;
+             margin: 30px auto;
+             box-shadow: inset 20px 10px 15px gray;
+            }
             .auswahl {
                 display: inline-block;
                 background: white;
                 margin: 20px; padding: 10px;
-                box-shadow: 15px 15px 15px grey;
+                box-shadow: 15px 15px 15px gray;
             }
         </style>
+        <script src="lib/image.js"></script>
+        <script src="lib/collection.js"></script>
+        <script src="lib/quiz.js"></script>
     </head>
-    <body style="background:silver;">
+    <body>
+
+      <h1>Welcome to the Punk (Text Prompt-To-Image) Quiz</h1>
+
+      <p style="font-size: 200%;">
+         <span id="rounds">Round: ___ </span> /
+         <span id="points">Points: ____ </span>
+      </p>
 
 
-       <div>
-        <div style="display: inline-block;">
-           <!-- first column -->
-        <div style="font-size:20px;
-             background: #C2CFE4; border-radius: 70px;
-             width: 550px;
-             border: 20px solid #264B87;
-             margin: 30px auto;
-             text-align: center;
-             box-shadow: inset 20px 10px 15px grey;">
-            <p id="intro">Welcome to the Punk (Text Prompt-To-Image) Quiz</p>
+        <div class="question">
+            <p id='commentary1'>___</p>
             <p id="text" style="font-size: 200%;">____</p>
+            <p id='commentary2'>___</p>
         </div>
-      </div>
-      <div style="display: inline-block;">
-        <!-- second column -->
-         <p>
-            Round: ___ <br>
-            Points: ____ <br>
-         </p>
-         <p onclick="nextButton();">[Next Question]</p>
-      </div>
-     </div>
-
 
 
         <div>
-           <div id="0" class="auswahl" onclick="tippeButton(this);">
+           <div id="A" class="auswahl" onclick="tippeButton(this);">
               <span style="font-size: 200%;">A</span>
               <canvas id="ia"></canvas>
            </div>
-            <div id="1" class="auswahl" onclick="tippeButton(this);">
+            <div id="B" class="auswahl" onclick="tippeButton(this);">
               <span style="font-size: 200%;">B</span>
               <canvas id="ib"></canvas>
             </div>
-            <div id="2" class="auswahl" onclick="tippeButton(this);">
+            <div id="C" class="auswahl" onclick="tippeButton(this);">
               <span style="font-size: 200%;">C</span>
               <canvas id="ic"></canvas>
             </div>
-            <div id="3" class="auswahl" onclick="tippeButton(this);">
+            <div id="D" class="auswahl" onclick="tippeButton(this);">
               <span style="font-size: 200%;">D</span>
               <canvas id="id"></canvas>
             </div>
 
             <p style="font-size: 80%;">
-              <span id='attribs'>Images w/ ____ </span>
+              <span id='attribs'>Images w/ ____ </span> -
+              <span onclick="nextButton();">[Show Next Question]</span>
             </p>
         </div>
 
 
+
+
+
 <script>
-
-
-function parseCsv( str ) {
-  const lines = str.split( /\r?\n/ );
-  let rows = [];
-
-  for( let line of lines ) {
-      line = line.trim();
-
-      // skip empty & comment lines
-      if( line.length === 0 || line.startsWith('#') ) {
-         continue;
-      }
-      values = line.split(',');
-
-      values = values.map( (val, index) => val.trim() );
-      // console.log( values );
-
-      rows.push( values );
-  }
-
-  return rows
-}
-
-
-class ImageComposite {
-
-  static read( src,
-                tileWidth=24,
-                tileHeight=24 ) {
-      let img = new Image();
-      img.src = src;
-      return new ImageComposite( img, tileWidth, tileHeight );
-   }
-
-   constructor( img,
-                tileWidth=24,
-                tileHeight=24 ) {
-     this.img   = img;
-     this.tileWidth =  tileWidth;
-     this.tileHeight = tileHeight;
-   }
-
-   // change to load or such - why? why not?
-   //   wait for image to load
-   async ready() {
-      return new Promise( (resolve, reject) => {
-         this.img.onload = () => {
-           console.log( "  image.onload callback " );
-           resolve( true );
-           console.log( "done ImageComposite.ready()" );
-        }
-     });
-  }
-
-
-  drawCanvas( num, sel, zoom=1 ) {
-    let canvas = (typeof sel === 'string') ?
-                    document.querySelector( sel )
-                     :
-                    sel;
-
-    canvas.width = this.tileWidth*zoom;
-    canvas.height =this.tileHeight*zoom;
-
-    let cx = canvas.getContext( "2d" );
-    cx.clearRect( 0, 0, this.tileWidth, this.tileHeight );
-
-    let cols = this.img.naturalWidth / this.tileHeight;
-    let rows = this.img.naturalHeight / this.tileWidth;
-    console.log( cols, rows );
-
-    let dy = Math.floor( num / cols );
-    let dx = num % cols;
-    console.log( dx, dy );
-
-    cx.imageSmoothingEnabled = false;
-    cx.drawImage( this.img,
-                  // source rect
-                  dx*this.tileWidth, dy*this.tileHeight, this.tileWidth, this.tileHeight,
-                  // dest rect
-                  0, 0, this.tileWidth*zoom, this.tileHeight*zoom );
-  }
-}
-
-
-function random( max, exclude=[] ) {
-  // e.g. random( 3 ) =>  results in 0,1,2
-  //  note: retry if num(ber) already in exclude array (sample)
-  let num;
-  do {
-    num = Math.floor( Math.random() * max );
-  } while(  exclude.includes( num ) );
-  return num;
-}
-
-
-/*
-  var fragen = new Array();
-            var runden = 0;
-
-  */
-  var answer;
-  var gesperrt = true;
-  var punkte = 0;
-
-  var composite;   /* image composite */
-  var recs;
-  var ids_by_attributes;
-
+  var quiz;
+  var points = 0;
 
 
   function tippeButton( gewaehlterButton ) {
-                if (gesperrt) {
+                if (quiz.is_locked()) {
                     return
                 }
                 // gewaehlterButton.style.boxShadow = "10px 10px 20px grey inset";
                 let button_id = gewaehlterButton.getAttribute("id");
                 // for now ids are 0/1/2/3
                 console.log( button_id );
-                 if ( button_id == answer ) {
-                    punkte++;
+                 if ( quiz.is_answer( button_id ) ) {
+                    points++;
                     gewaehlterButton.style.background = "#00FF00";
+
+                    document.getElementById("commentary2").innerText =
+                        "Bingo!";
+                    document.getElementById("commentary1").innerText =
+                         "Next question upcoming in a sec...";
+
                     // gesperrt = true;
                     // auto-trigger question in 1sec(s)
                     setTimeout( nextQuestion, 1000 );
                 } else {
                     gewaehlterButton.style.background = "#FF0000";
-                    punkte--;
+                    points--;
+                    document.getElementById("commentary2").innerText =
+                       "Wrong. Sorry, no match. Try again.";
+
                 }
+                document.getElementById( 'points' ).innerText = `Points: ${points}`;
             }
 
 
 function nextButton() {
-   console.log( "press nextButton" );
-   if (gesperrt) {
+   console.log( "is_locked", quiz.is_locked() );
+   if (quiz.is_locked() ) {
                     return
                 }
 
+   console.log( "press nextButton" );
    nextQuestion();
 }
 
@@ -226,90 +123,49 @@ function nextButton() {
 
 function nextQuestion() {
 
-  document.getElementById("0").style.background = "white";
-  document.getElementById("1").style.background = "white";
-  document.getElementById("2").style.background = "white";
-  document.getElementById("3").style.background = "white";
-
-   // from 1 to 7  (not drop 8 attributes - only one punk)
-   const attribs = random( 6 ) + 1;
-  console.log( attribs );
-  let el = document.getElementById( 'attribs' );
-  console.log( el );
-
-   const attrib_ids = ids_by_attributes[ attribs ];
-
-   el.innerText = `Images w/ ${attribs-1} attribute(s) - ${attrib_ids.length} max.`;
+  document.getElementById("commentary1").innerText =
+    "Guess the matching (generated) artwork / image."
+    document.getElementById("commentary2").innerText =
+     "A? B? C? D?";
 
 
-   // note: pass in drawn lucky numbers (to avoid duplicates!!)
-   let nums = [];
-   let max = attrib_ids.length;
-   nums.push( random( max, nums ) );
-   nums.push( random( max, nums ) );
-   nums.push( random( max, nums ) );
-   nums.push( random( max, nums ) );
 
-   let ids = [
-      attrib_ids[ nums[0] ],
-      attrib_ids[ nums[1] ],
-      attrib_ids[ nums[2] ],
-      attrib_ids[ nums[3] ],
-             ];
+  quiz.nextQuestion();
 
-  const zoom = 4;
-   composite.drawCanvas( ids[0], '#ia', zoom );
-   composite.drawCanvas( ids[1], '#ib', zoom );
-   composite.drawCanvas( ids[2], '#ic', zoom );
-   composite.drawCanvas( ids[3], '#id', zoom );
 
-   answer = random( 4 );
-   const answer_id = ids[ answer ];
+   document.getElementById( 'rounds' ).innerText = `Round: ${quiz.rounds}`;
+   document.getElementById( 'points' ).innerText = `Points: ${points}`;
 
-   el = document.getElementById( 'text' );
-   el.innerText =  recs[ answer_id ].join( ' • ' );
+  // debug (text) e.g. `Images w/ ${attribs-1} attribute(s) - ${attrib_ids.length} max.`
+  document.getElementById( 'attribs' ).innerText = quiz.debug();
+
+   // note: requires question() NOT question  - why?
+   console.log( "text", quiz.question() );
+   document.getElementById( 'text' ).innerText =  quiz.question();
+
+
+   document.getElementById("A").style.background = "white";
+   document.getElementById("B").style.background = "white";
+   document.getElementById("C").style.background = "white";
+   document.getElementById("D").style.background = "white";
+
+  const zoom = 6;
+
+   quiz.drawA( '#ia', zoom );
+   quiz.drawB( '#ib', zoom );
+   quiz.drawC( '#ic', zoom );
+   quiz.drawD( '#id', zoom );
 }
 
 
+
+
 document.addEventListener( "DOMContentLoaded", async () => {
-  composite = ImageComposite.read( 'punks.png' );
 
-  await composite.ready();
+  col = await Collection.read( 'punks.png',
+                               'punks.csv' );
 
-  // get csv records
-  const res = await fetch( 'punks.csv' );
-  // console.log( res );
-
-  const text = await res.text();
-  // console.log( text );
-  const raw_recs = parseCsv( text );
-
-
-  // group recs by number of attributes
-  // note: skip header row (0)
-  recs = []
-  for (let i=1; i < raw_recs.length; i++) {
-     let rec = raw_recs[i];
-     // remove all empty strings
-     rec = rec.filter( val => val != "" );
-     // console.log( rec );
-     recs.push( rec );
-  }
-  // console.log( recs );
-  console.log( recs.length, "record(s)" );
-
-
-  ids_by_attributes = {};
-  for (let i=0; i < recs.length; i++) {
-     let rec = recs[i];
-     const count = rec.length;
-     let ids =  ids_by_attributes[count] ||= [];
-     ids.push( i );
-  }
-
-  console.log( ids_by_attributes );
-
-   gesperrt = false;
+  quiz = new Quiz( col );
 
   nextQuestion();
 })
