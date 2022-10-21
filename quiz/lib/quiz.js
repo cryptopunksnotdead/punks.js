@@ -19,7 +19,6 @@ constructor( col ) {
    this.col = col;
 
    this.rounds = 0;
-   this.pounds = 0;
    this.locked = true;
 
 
