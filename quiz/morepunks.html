@@ -164,8 +164,8 @@ document.addEventListener( "DOMContentLoaded", async () => {
   const image_url = 'https://github.com/cryptopunksnotdead/awesome-24px/raw/master/collection/morepunks.png';
   const dataset_url = 'https://cryptopunksnotdead.github.io/punks.attributes/more/morepunks.csv';
 
-  col = await Collection.read( image_url,
-                               dataset_url );
+  const col = await Collection.read( image_url,
+                                     dataset_url );
 
   quiz = new Quiz( col );
 
