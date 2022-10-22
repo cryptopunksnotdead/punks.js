@@ -91,11 +91,13 @@ constructor( col ) {
 }
 
 
-rounds()         { return this.rounds; }
+static ANSWER_LABELS =  ['A', 'B', 'C', 'D'];
+
+// make is_locked into a get property - why? why not?
 is_locked()         { return this.locked; }
+
 is_answer( val )   {
-  const answer_labels =  ['A', 'B', 'C', 'D'];
-  return val == answer_labels[ this.answer ];
+  return val == Quiz.ANSWER_LABELS[ this.answer ];
  }
 
 
@@ -106,7 +108,8 @@ is_answer( val )   {
   drawD( sel, zoom=1 ) { this.col.composite.drawCanvas( this.ids[3], sel, zoom ); }
 
 
-  question()  {
+
+  get question()  {
     const answer_id = this.ids[ this.answer ];
 
       // remove all empty strings
@@ -117,7 +120,7 @@ is_answer( val )   {
      return text;
   }
 
-   debug()  {
+   get debug()  {
       // debug text
      const attrib_ids = this.ids_by_attributes.get( this.attribs );
      const text = `Images w/ ${this.attribs-1} attribute(s) - ${attrib_ids.length} max.`;

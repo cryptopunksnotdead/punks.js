@@ -137,11 +137,10 @@ function nextQuestion() {
    document.getElementById( 'points' ).innerText = `Points: ${points}`;
 
   // debug (text) e.g. `Images w/ ${attribs-1} attribute(s) - ${attrib_ids.length} max.`
-  document.getElementById( 'attribs' ).innerText = quiz.debug();
+   document.getElementById( 'attribs' ).innerText = quiz.debug;
 
-   // note: requires question() NOT question  - why?
-   console.log( "text", quiz.question() );
-   document.getElementById( 'text' ).innerText =  quiz.question();
+   console.log( "text", quiz.question );
+   document.getElementById( 'text' ).innerText =  quiz.question;
 
 
    document.getElementById("A").style.background = "white";

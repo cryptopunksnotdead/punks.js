@@ -40,8 +40,6 @@ static async read_csv( url ) {
    this.recs   = recs;
    // console.log( recs );
 }
-
- recs() { return this.recs; }
 }
 
 
@@ -68,8 +66,5 @@ class Collection {
     // console.log( recs );
     console.log( this.recs.length, "record(s)" );
    }
-
-   composite()         { return this.composite; }
-   recs()              { return this.recs; }
 }
 
