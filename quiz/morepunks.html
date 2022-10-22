@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="utf-8">
+      <title>Quiz</title>
+        <style>
+            body {
+               background: silver;
+               text-align: center;
+
+            }
+            .question {
+               width: 800px;
+               font-size: 20px;
+              background: #C2CFE4; border-radius: 70px;
+             border: 20px solid #264B87;
+             margin: 30px auto;
+             box-shadow: inset 20px 10px 15px gray;
+            }
+            .auswahl {
+                display: inline-block;
+                background: white;
+                margin: 20px; padding: 10px;
+                box-shadow: 15px 15px 15px gray;
+            }
+        </style>
+        <script src="https://github.com/learnpixelart/pixelart.js/raw/master/pixelart.js/composite.js"></script>
+        <script src="https://github.com/learnpixelart/pixelart.js/raw/master/pixelart.js/pixelart.js/collection.js"></script>
+        <script src="https://github.com/learnpixelart/pixelart.js/raw/master/pixelart.js/quiz.js/quiz.js"></script>
+    </head>
+    <body>
+
+      <h1>Welcome to the More Punks (Text Prompt-To-Image) Quiz</h1>
+
+      <p style="font-size: 200%;">
+         <span id="rounds">Round: ___ </span> /
+         <span id="points">Points: ____ </span>
+      </p>
+
+
+        <div class="question">
+            <p id='commentary1'>___</p>
+            <p id="text" style="font-size: 200%;">____</p>
+            <p id='commentary2'>___</p>
+        </div>
+
+
+        <div>
+           <div id="A" class="auswahl" onclick="tippeButton(this);">
+              <span style="font-size: 200%;">A</span>
+              <canvas id="ia"></canvas>
+           </div>
+            <div id="B" class="auswahl" onclick="tippeButton(this);">
+              <span style="font-size: 200%;">B</span>
+              <canvas id="ib"></canvas>
+            </div>
+            <div id="C" class="auswahl" onclick="tippeButton(this);">
+              <span style="font-size: 200%;">C</span>
+              <canvas id="ic"></canvas>
+            </div>
+            <div id="D" class="auswahl" onclick="tippeButton(this);">
+              <span style="font-size: 200%;">D</span>
+              <canvas id="id"></canvas>
+            </div>
+
+            <p style="font-size: 80%;">
+              <span id='attribs'>Images w/ ____ </span> -
+              <span onclick="nextButton();">[Show Next Question]</span>
+            </p>
+        </div>
+
+
+
+
+
+<script>
+  var quiz;
+  var points = 0;
+
+
+  function tippeButton( gewaehlterButton ) {
+                if (quiz.is_locked()) {
+                    return
+                }
+                // gewaehlterButton.style.boxShadow = "10px 10px 20px grey inset";
+                let button_id = gewaehlterButton.getAttribute("id");
+                // for now ids are 0/1/2/3
+                console.log( button_id );
+                 if ( quiz.is_answer( button_id ) ) {
+                    points++;
+                    gewaehlterButton.style.background = "#00FF00";
+
+                    document.getElementById("commentary2").innerText =
+                        "Bingo!";
+                    document.getElementById("commentary1").innerText =
+                         "Next question upcoming in a sec...";
+
+                    // gesperrt = true;
+                    // auto-trigger question in 1sec(s)
+                    setTimeout( nextQuestion, 1000 );
+                } else {
+                    gewaehlterButton.style.background = "#FF0000";
+                    points--;
+                    document.getElementById("commentary2").innerText =
+                       "Wrong. Sorry, no match. Try again.";
+
+                }
+                document.getElementById( 'points' ).innerText = `Points: ${points}`;
+            }
+
+
+function nextButton() {
+   console.log( "is_locked", quiz.is_locked() );
+   if (quiz.is_locked() ) {
+                    return
+                }
+
+   console.log( "press nextButton" );
+   nextQuestion();
+}
+
+
+
+function nextQuestion() {
+
+  document.getElementById("commentary1").innerText =
+    "Guess the matching (generated) artwork / image."
+    document.getElementById("commentary2").innerText =
+     "A? B? C? D?";
+
+
+
+  quiz.nextQuestion();
+
+
+   document.getElementById( 'rounds' ).innerText = `Round: ${quiz.rounds}`;
+   document.getElementById( 'points' ).innerText = `Points: ${points}`;
+
+  // debug (text) e.g. `Images w/ ${attribs-1} attribute(s) - ${attrib_ids.length} max.`
+   document.getElementById( 'attribs' ).innerText = quiz.debug;
+
+   console.log( "text", quiz.question );
+   document.getElementById( 'text' ).innerText =  quiz.question;
+
+
+   document.getElementById("A").style.background = "white";
+   document.getElementById("B").style.background = "white";
+   document.getElementById("C").style.background = "white";
+   document.getElementById("D").style.background = "white";
+
+  const zoom = 6;
+
+   quiz.drawA( '#ia', zoom );
+   quiz.drawB( '#ib', zoom );
+   quiz.drawC( '#ic', zoom );
+   quiz.drawD( '#id', zoom );
+}
+
+
+
+
+document.addEventListener( "DOMContentLoaded", async () => {
+
+  const image_url = 'https://github.com/cryptopunksnotdead/awesome-24px/raw/master/collection/morepunks.png';
+  const dataset_url = 'https://cryptopunksnotdead.github.io/punks.attributes/more/morepunks.csv';
+
+  col = await Collection.read( image_url,
+                               dataset_url );
+
+  quiz = new Quiz( col );
+
+  nextQuestion();
+})
+
+</script>
+
+      </body>
+</html>

@@ -46,9 +46,19 @@ Try online @ [**cryptopunksnotdead.github.io/punks.js/editor**](https://cryptopu
 Try online @ [**cryptopunksnotdead.github.io/punks.js/yeoldepunks**](https://cryptopunksnotdead.github.io/punks.js/yeoldepunks/)
 
 
-### Punk (Text Prompt-To-Image) Quiz
+### Punk (Text Prompt-To-Image) Quiz(es)
 
-Try online @ [**cryptopunksnotdead.github.io/punks.js/quiz**](https://cryptopunksnotdead.github.io/punks.js/quiz/)
+
+10 000 Matt & John's® Ye Olde' Punks
+
+Try online @ [**cryptopunksnotdead.github.io/punks.js/quiz/punks**](https://cryptopunksnotdead.github.io/punks.js/quiz/punks)
+
+
+1000 More Punks
+
+Try online @ [**cryptopunksnotdead.github.io/punks.js/quiz/morepunks**](https://cryptopunksnotdead.github.io/punks.js/quiz/morepunks)
+
+
 
 
 
