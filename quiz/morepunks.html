@@ -24,6 +24,7 @@
                 box-shadow: 15px 15px 15px gray;
             }
         </style>
+           <script src="https://learnpixelart.github.io/pixelart.js/dataset.js/dataset.js"></script>
            <script src="https://learnpixelart.github.io/pixelart.js/pixelart.js/composite.js"></script>
            <script src="https://learnpixelart.github.io/pixelart.js/pixelart.js/collection.js"></script>
            <script src="https://learnpixelart.github.io/pixelart.js/quiz.js/quiz.js"></script>
@@ -162,11 +163,32 @@ function nextQuestion() {
 document.addEventListener( "DOMContentLoaded", async () => {
 
   const image_url = 'https://github.com/cryptopunksnotdead/awesome-24px/raw/master/collection/morepunks.png';
+  const image = await ImageComposite.read( image_url );
+
   const dataset_url = 'https://cryptopunksnotdead.github.io/punks.attributes/more/morepunks.csv';
+  let dataset = await Dataset.readCsv( datset_url );
+  // drop id column
+  dataset = dataset.except( 'id' );
 
-  const col = await Collection.read( image_url,
-                                     dataset_url );
+  // type, gender,
+  //   skin tone,
+  //   hair, hair color,
+  //   facial hair, facial hair color,
+  //    accessories
+  // merge some columns
+  dataset = dataset.map( rec => {
+      o = {};
+      o['type']      = `${rec['type']} ${rec['gender']}`;
+      o['skin tone'] = rec['skin tone'];
+      o['hair']      = rec['hair'] == '' ?
+                                '' : `${rec['hair']} (${rec['hair color']})`;
+      o['facial hair'] =  rec['facial hair'] == '' ?
+                                '' : `${rec['facial hair']} (${rec['facial hair color']})`;
+      o['accessories'] = rec['accessories'];
+      return o;
+  });
 
+  const col = new Collection( image, dataset );
   quiz = new Quiz( col );
 
   nextQuestion();
