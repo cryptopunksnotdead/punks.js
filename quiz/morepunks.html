@@ -170,18 +170,21 @@ document.addEventListener( "DOMContentLoaded", async () => {
   // drop id column
   dataset = dataset.except( 'id' );
 
-  // type, gender,
-  //   skin tone,
+  // type, gender, skin tone,
   //   hair, hair color,
   //   facial hair, facial hair color,
   //    accessories
   // merge some columns
   dataset = dataset.map( rec => {
       o = {};
-      o['type']      = `${rec['type']} ${rec['gender']}`;
-      o['skin tone'] = rec['skin tone'];
-      o['hair']      = rec['hair'] == '' ?
-                                '' : `${rec['hair']} (${rec['hair color']})`;
+      o['type']      = `${rec['type']} ${rec['gender']} ${rec['skin tone']}`;
+      if( rec['hair'] != '') {
+        o['hair'] = rec['hair'];
+        // note:  hair bold has no color (thus, check for hair color)
+        if( rec['hair color'] != '' ) {
+          o['hair'] += ` (${rec['hair color']})`;
+        }
+      }
       o['facial hair'] =  rec['facial hair'] == '' ?
                                 '' : `${rec['facial hair']} (${rec['facial hair color']})`;
       o['accessories'] = rec['accessories'];
