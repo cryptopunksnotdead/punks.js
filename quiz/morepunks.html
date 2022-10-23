@@ -193,7 +193,7 @@ document.addEventListener( "DOMContentLoaded", async () => {
         }
       }
       // split accessories
-      acc = rec['accessories'].split( /\// );
+      let acc = rec['accessories'].split( /\// );
       for( let [i,val] of acc.entries() ) {
         o[`accessory${i+1}`] = val.trim();  // trim possible leading/trailing spaces
       }
