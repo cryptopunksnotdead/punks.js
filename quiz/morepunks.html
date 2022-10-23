@@ -185,8 +185,13 @@ document.addEventListener( "DOMContentLoaded", async () => {
           o['hair'] += ` (${rec['hair color']})`;
         }
       }
-      o['facial hair'] =  rec['facial hair'] == '' ?
-                                '' : `${rec['facial hair']} (${rec['facial hair color']})`;
+      if( rec['facial hair'] != '') {
+        o['facial hair'] = rec['facial hair']
+        // note:  facial hair stubble has no color (thus, check for facial hair color too)
+        if( rec['facial hair color'] != '' ) {
+          o['facial hair'] += ` (${rec['facial hair color']})`;
+        }
+      }
       o['accessories'] = rec['accessories'];
       return o;
   });
