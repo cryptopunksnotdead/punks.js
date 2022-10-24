@@ -162,10 +162,10 @@ function nextQuestion() {
 
 document.addEventListener( "DOMContentLoaded", async () => {
 
-  const image_url = 'https://github.com/cryptopunksnotdead/awesome-24px/raw/master/collection/morepunks.png';
+  const image_url = 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/morepunks.png';
   const image = await ImageComposite.read( image_url );
 
-  const dataset_url = 'https://cryptopunksnotdead.github.io/punks.attributes/more/morepunks.csv';
+  const dataset_url = 'https://raw.githubusercontent.com/cryptopunksnotdead/punks.attributes/master/more/morepunks.csv';
   let dataset = await Dataset.readCsv( dataset_url );
   // drop id column
   dataset = dataset.except( 'id' );

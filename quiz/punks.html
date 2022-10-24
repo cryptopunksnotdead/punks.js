@@ -31,7 +31,7 @@
     </head>
     <body>
 
-      <h1>Welcome to the Punks (Text Prompt-To-Image) Quiz</h1>
+      <h1>Welcome to the 24px Punks (Text Prompt-To-Image) Quiz</h1>
 
       <p style="font-size: 200%;">
          <span id="rounds">Round: ___ </span> /
@@ -162,8 +162,8 @@ function nextQuestion() {
 
 document.addEventListener( "DOMContentLoaded", async () => {
 
-  const image_url   = 'punks.png';
-  const dataset_url = 'punks.csv';
+  const image_url   = 'https://raw.githubusercontent.com/cryptopunksnotdead/awesome-24px/master/collection/phunks.png';
+  const dataset_url = 'https://raw.githubusercontent.com/cryptopunksnotdead/punks.whitelabel/master/punks.csv';
 
   const col = await Collection.read( image_url,
                                      dataset_url );
