@@ -1,5 +1,8 @@
 
-<script src="lib/spritesheet.js"></script>
+<script src="https://learnpixelart.github.io/pixelart.js/dataset.js/dataset.js"></script>
+<script src="https://learnpixelart.github.io/pixelart.js/pixelart.js/composite.js"></script>
+<script src="https://learnpixelart.github.io/pixelart.js/pixelart.js/spritesheet.js"></script>
+<script src="https://learnpixelart.github.io/pixelart.js/pixelart.js/generator.js"></script>
 
 
 <style>
@@ -862,15 +865,64 @@ Select headwear:
    Open source public domain.
    No rights reserved.
   See
-  <a href="https://github.com/cryptopunksnotdead/pixelart.js/tree/master/yeoldepunks">/pixelart.js/yeoldepunks »</a>
+  <a href="https://github.com/cryptopunksnotdead/punks.js/tree/master/yeoldepunks">/punks.js/yeoldepunks »</a>
 </p>
 
 
 
 <script>
 
-   var sheet = Spritesheet.read( 'yeoldepunks-24x24.png',
-   `0, Male 1
+  var g;    // (global) generator  (see document load)
+
+  function autoupdate() {
+    let els = document.querySelectorAll( "input[type='radio']" );
+       for( let el of Array.from( els ) ) {
+          el.addEventListener('click', () => update() );
+       }
+   }
+
+  function update() {
+    let els = document.querySelectorAll( "input[type='radio']" );
+       // console.log( els );
+
+       let attributes = [];
+       let gender = '(m)';
+
+       for( let el of Array.from( els ) ) {
+         let value = el.value
+
+         if (el.checked) {
+           console.log( value );
+
+           if( value == 'none' ) {
+              continue;
+           }
+
+           if( attributes.length == 0 ) {
+              gender =  value.indexOf( 'female') != -1 ? '(f)' : '(m)';
+              attributes.push( value );
+           }
+           else
+           {
+              attributes.push( value + " " + gender );
+           }
+         }
+       }
+
+       console.log( attributes );
+       generate( ...attributes );
+      }
+
+  function generate( ...args ) {
+       g.generate( '#punk10x', ...args, {zoom: 10, background: '#638596'} );
+       g.generate( '#punk1x', ...args, {zoom: 1, background: '#638596'} );
+  }
+
+
+  document.addEventListener( "DOMContentLoaded", async () => {
+
+   const dataset = Dataset.parseCsv( `id, name
+0, Male 1
 1, Male 2
 2, Male 3
 3, Male 4
@@ -1003,61 +1055,18 @@ Select headwear:
 130, Black Lipstick (f)
 131, Horned Rim Glasses (f)
 132, Silver Chain (f)` );
-   sheet.draw();
 
 
-   var g = Generator.use( sheet );
+const composite = await ImageComposite.read( 'yeoldepunks-24x24.png' );
+   const sheet = new Spritesheet( composite, dataset );
+
+   sheet.drawSprites();
 
 
-   function autoupdate() {
-    let els = document.querySelectorAll( "input[type='radio']" );
-       for( let el of Array.from( els ) ) {
-          el.addEventListener('click', () => update() );
-       }
-   }
+   g = Generator.use( sheet );
 
-  function update() {
-    let els = document.querySelectorAll( "input[type='radio']" );
-       // console.log( els );
-
-       let attributes = [];
-       let gender = '(m)';
-
-       for( let el of Array.from( els ) ) {
-         let value = el.value
-
-         if (el.checked) {
-           console.log( value );
-
-           if( value == 'none' ) {
-              continue;
-           }
-
-           if( attributes.length == 0 ) {
-              gender =  value.indexOf( 'female') != -1 ? '(f)' : '(m)';
-              attributes.push( value );
-           }
-           else
-           {
-              attributes.push( value + " " + gender );
-           }
-         }
-       }
-
-       console.log( attributes );
-       generate( ...attributes );
-      }
-
-  function generate( ...args ) {
-       g.generate( '#punk10x', ...args, {zoom: 10, background: '#638596'} );
-       g.generate( '#punk1x', ...args, {zoom: 1, background: '#638596'} );
-  }
-
-
-  window.onload = function() {
-    console.log( "onload callback" );
     autoupdate();
     update();
-  }
+});
 
 </script>
