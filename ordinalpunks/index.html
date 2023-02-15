@@ -998,146 +998,146 @@ Select headwear:
 document.addEventListener( "DOMContentLoaded", async () => {
 
   const dataset = Dataset.parseCsv( `id, name
-  1, male 1
-2, male 2
-3, male 3
-4, male 4
-5, male blue
-6, male orange
-7, male gold
-8, male zombie
-9, male vampire
-10, male demon
-11, male orc
-12, male mummy
-13, male skeleton
-14, male ape blue
-15, male ape gold
-16, male zombie ape
-17, male alien ape
-18, male alien green
-19, male alien yellow
-20, male alien gold
-21, male robot
-22, female 1
-23, female 2
-24, female 3
-25, female 4
-26, female blue
-27, female purple
-28, female orange
-29, female yellow
-30, female gold
-31, female zombie
-32, female demon
-33, female vampire
-34, female orc
-35, female mummy
-36, female skeleton
-37, female ape
-38, female alien red magenta
-39, female alien violet
-40, female robot
-41, 3dglasses (m)
-42, 3dglassesbw (m)
-43, bandana (m)
-44, beanie (m)
-45, beaniebw (m)
-46, bigbeard (m)
-47, bigshades (m)
-48, birthdayhat (m)
-49, bubblegum (m)
-50, buckteeth (m)
-51, capburgerking (m)
-52, capforward (m)
-53, capforwardbw (m)
-54, capred (m)
-55, chinstrap (m)
-56, cigar (m)
-57, cigarette (m)
-58, classicshades (m)
-59, clowneyesblue (m)
-60, clowneyesgreen (m)
-61, clownhairblue (m)
-62, clownnose (m)
-63, cowboyhat (m)
-64, cowboyhatbw (m)
-65, crazyhair (m)
-66, demonhorns (m)
-67, dorag (m)
-68, earring (m)
-69, eyemask (m)
-70, eyepatch (m)
-71, fedora (m)
-72, fedorabw (m)
-73, frown (m)
-74, frumpyhair (m)
-75, goat (m)
-76, goldchain (m)
-77, heartshades (m)
-78, hoodie (m)
-79, jesterhat (m)
-80, knittedcap (m)
-81, lasereyes (m)
-82, medicalmask (m)
-83, messyhair (m)
-84, mole (m)
-85, mustache (m)
-86, pipe (m)
-87, policecapbw (m)
-88, regularshades (m)
-89, silverchain (m)
-90, smile (m)
-91, sombrero (m)
-92, spots (m)
-93, tophat (m)
-94, tophatbw (m)
-95, vr (m)
-96, 3dglasses (f)
-97, bandana (f)
-98, beanie (f)
-99, bigshades (f)
-100, birthdayhat (f)
-101, blacklipstick (f)
-102, blondebob (f)
-103, blondeshort (f)
-104, blueeyeshadow (f)
-105, bow (f)
-106, cap (f)
-107, capforward (f)
-108, choker (f)
-109, cigar (f)
-110, cigarette (f)
-111, classicshades (f)
-112, clowneyesgreen (f)
-113, clownhairgreen (f)
-114, clownnose (f)
-115, cowboyhat (f)
-116, crown (f)
-117, darkhair (f)
-118, dorag (f)
-119, earring (f)
-120, eyemask (f)
-121, eyepatch (f)
-122, flowers (f)
-123, frumpyhair (f)
-124, goldchain (f)
-125, greeneyeshadow (f)
-126, heartshades (f)
-127, hoodie (f)
-128, knittedcap (f)
-129, medicalmask (f)
-130, mole (f)
-131, nerdglasses (f)
-132, pilothelmet (f)
-133, pipe (f)
-134, rosycheeks (f)
-135, silverchain (f)
-136, sombrero (f)
-137, tiara (f)
-138, tophatbw (f)
-139, vr (f)
-140, wildwhitehair (f)` );
+  0, male 1
+1, male 2
+2, male 3
+3, male 4
+4, male blue
+5, male orange
+6, male gold
+7, male zombie
+8, male vampire
+9, male demon
+10, male orc
+11, male mummy
+12, male skeleton
+13, male ape blue
+14, male ape gold
+15, male zombie ape
+16, male alien ape
+17, male alien green
+18, male alien yellow
+19, male alien gold
+20, male robot
+21, female 1
+22, female 2
+23, female 3
+24, female 4
+25, female blue
+26, female purple
+27, female orange
+28, female yellow
+29, female gold
+30, female zombie
+31, female demon
+32, female vampire
+33, female orc
+34, female mummy
+35, female skeleton
+36, female ape
+37, female alien red magenta
+38, female alien violet
+39, female robot
+40, 3dglasses (m)
+41, 3dglassesbw (m)
+42, bandana (m)
+43, beanie (m)
+44, beaniebw (m)
+45, bigbeard (m)
+46, bigshades (m)
+47, birthdayhat (m)
+48, bubblegum (m)
+49, buckteeth (m)
+50, capburgerking (m)
+51, capforward (m)
+52, capforwardbw (m)
+53, capred (m)
+54, chinstrap (m)
+55, cigar (m)
+56, cigarette (m)
+57, classicshades (m)
+58, clowneyesblue (m)
+59, clowneyesgreen (m)
+60, clownhairblue (m)
+61, clownnose (m)
+62, cowboyhat (m)
+63, cowboyhatbw (m)
+64, crazyhair (m)
+65, demonhorns (m)
+66, dorag (m)
+67, earring (m)
+68, eyemask (m)
+69, eyepatch (m)
+70, fedora (m)
+71, fedorabw (m)
+72, frown (m)
+73, frumpyhair (m)
+74, goat (m)
+75, goldchain (m)
+76, heartshades (m)
+77, hoodie (m)
+78, jesterhat (m)
+79, knittedcap (m)
+80, lasereyes (m)
+81, medicalmask (m)
+82, messyhair (m)
+83, mole (m)
+84, mustache (m)
+85, pipe (m)
+86, policecapbw (m)
+87, regularshades (m)
+88, silverchain (m)
+89, smile (m)
+90, sombrero (m)
+91, spots (m)
+92, tophat (m)
+93, tophatbw (m)
+94, vr (m)
+95, 3dglasses (f)
+96, bandana (f)
+97, beanie (f)
+98, bigshades (f)
+99, birthdayhat (f)
+100, blacklipstick (f)
+101, blondebob (f)
+102, blondeshort (f)
+103, blueeyeshadow (f)
+104, bow (f)
+105, cap (f)
+106, capforward (f)
+107, choker (f)
+108, cigar (f)
+109, cigarette (f)
+110, classicshades (f)
+111, clowneyesgreen (f)
+112, clownhairgreen (f)
+113, clownnose (f)
+114, cowboyhat (f)
+115, crown (f)
+116, darkhair (f)
+117, dorag (f)
+118, earring (f)
+119, eyemask (f)
+120, eyepatch (f)
+121, flowers (f)
+122, frumpyhair (f)
+123, goldchain (f)
+124, greeneyeshadow (f)
+125, heartshades (f)
+126, hoodie (f)
+127, knittedcap (f)
+128, medicalmask (f)
+129, mole (f)
+130, nerdglasses (f)
+131, pilothelmet (f)
+132, pipe (f)
+133, rosycheeks (f)
+134, silverchain (f)
+135, sombrero (f)
+136, tiara (f)
+137, tophatbw (f)
+138, vr (f)
+139, wildwhitehair (f)` );
 
    const composite = await ImageComposite.read( 'ordinalpunks-24x24.png' );
    const sheet = new Spritesheet( composite, dataset );
